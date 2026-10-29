@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Practice Hub: GK, Grammar and English</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IlByYWN0aWNlIEh1YiBsb2dvIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjN0M1Q0ZGIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzIyRDNFRSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTYiIGZpbGw9InVybCgjYmcpIi8+CiAgPGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiPgogICAgPGNpcmNsZSBjeD0iMjQ2IiBjeT0iMjY4IiByPSIxNDAiLz4KICAgIDxlbGxpcHNlIGN4PSIyNDYiIGN5PSIyNjgiIHJ4PSI2MiIgcnk9IjE0MCIvPgogICAgPHBhdGggZD0iTTEwNiAyNjhoMjgwIi8+CiAgICA8cGF0aCBkPSJNMTMyIDE5MHExMTQgMzYgMjI4IDBNMTMyIDM0NnExMTQtMzYgMjI4IDAiIHN0cm9rZS13aWR0aD0iMTYiIG9wYWNpdHk9Ii43NSIvPgogIDwvZz4KICA8cGF0aCBkPSJNMzg4IDc4bDE0IDQ0IDQ0IDE0LTQ0IDE0LTE0IDQ0LTE0LTQ0LTQ0LTE0IDQ0LTE0eiIgZmlsbD0iI0ZGQzg1NyIvPgo8L3N2Zz4K">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+:root{--mode:dark;--bg0:#070B20;--bg1:#101846;--ink:#EDF0FF;--muted:#9AA3D6;--card:rgba(255,255,255,.07);--cardb:rgba(255,255,255,.15);--brand:#7C5CFF;--brand2:#22D3EE;--on:#0A0E27;--good:#34D399;--goodbg:rgba(52,211,153,.18);--bad:#FB7185;--badbg:rgba(251,113,133,.18);--amber:#FFC857;--pc:150,170,255;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--mode:light;--bg0:#EEF1FF;--bg1:#D9E0FF;--ink:#141A45;--muted:#555E91;--card:rgba(255,255,255,.75);--cardb:rgba(90,100,200,.25);--brand:#5B3DF5;--brand2:#0891B2;--on:#fff;--good:#0E8F63;--goodbg:rgba(14,143,99,.14);--bad:#C8344D;--badbg:rgba(200,52,77,.12);--amber:#B7791F;--pc:70,80,200}}
+:root[data-theme="light"]{--mode:light;--bg0:#EEF1FF;--bg1:#D9E0FF;--ink:#141A45;--muted:#555E91;--card:rgba(255,255,255,.75);--cardb:rgba(90,100,200,.25);--brand:#5B3DF5;--brand2:#0891B2;--on:#fff;--good:#0E8F63;--goodbg:rgba(14,143,99,.14);--bad:#C8344D;--badbg:rgba(200,52,77,.12);--amber:#B7791F;--pc:70,80,200}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:var(--ink);background:linear-gradient(160deg,var(--bg0),var(--bg1)) fixed;font:17px/1.5 "DM Sans",system-ui,sans-serif;overflow-x:hidden}
+#bg{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.blob{position:fixed;border-radius:50%;filter:blur(80px);opacity:.45;z-index:0;pointer-events:none;animation:drift 22s ease-in-out infinite alternate}
+.b1{width:46vmax;height:46vmax;background:var(--brand);top:-14vmax;left:-12vmax}
+.b2{width:38vmax;height:38vmax;background:var(--brand2);bottom:-12vmax;right:-10vmax;animation-delay:-8s}
+.b3{width:26vmax;height:26vmax;background:#FF6FB5;top:38%;left:52%;opacity:.25;animation-delay:-14s}
+@keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(9vmax,6vmax) scale(1.18)}}
+@media (prefers-reduced-motion:reduce){.blob{animation:none}}
+main{position:relative;z-index:1;max-width:780px;margin:0 auto;padding:22px 18px 56px}
+h1,h2,h3{font-family:Outfit,system-ui,sans-serif;margin:0;line-height:1.15}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:26px}
+.logo{font:800 20px Outfit,sans-serif}
+.chip{background:var(--card);border:1px solid var(--cardb);border-radius:999px;padding:6px 14px;font-size:14px;color:var(--amber);backdrop-filter:blur(10px)}
+.ghost{background:var(--card);border:1px solid var(--cardb);color:var(--muted);border-radius:999px;padding:6px 14px;font:inherit;font-size:14px;cursor:pointer;backdrop-filter:blur(10px)}
+h1{font-size:clamp(34px,7vw,54px);font-weight:800;letter-spacing:-.02em}
+.lead{color:var(--muted);margin:12px 0 28px;max-width:520px}
+.grid{display:grid;gap:14px}
+.glass{background:var(--card);border:1px solid var(--cardb);border-radius:20px;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.cat{display:grid;grid-template-columns:56px 1fr;gap:14px;align-items:center;text-align:left;width:100%;color:var(--ink);padding:18px;font:inherit;cursor:pointer;transition:transform .15s,border-color .15s}
+.cat:hover{transform:translateY(-3px);border-color:var(--brand2)}
+.ico{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;font-size:28px;background:linear-gradient(135deg,var(--brand),var(--brand2))}
+.cat h3{font-size:21px}
+.cat p{margin:2px 0 8px;color:var(--muted);font-size:15px}
+.meter{height:6px;background:var(--cardb);border-radius:6px;overflow:hidden}
+.meter i{display:block;height:100%;background:linear-gradient(90deg,var(--brand),var(--brand2))}
+.stats{display:flex;justify-content:space-between;color:var(--muted);font-size:13px;margin-top:6px}
+button:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.hidden{display:none}
+.qwrap{padding:24px 22px}
+.tag{display:inline-block;font-size:13px;color:var(--brand2);margin-bottom:10px}
+.q{font:700 clamp(20px,4.5vw,26px)/1.3 Outfit,sans-serif;margin-bottom:20px}
+.opts{display:grid;gap:10px}
+.opt{display:flex;gap:12px;align-items:center;text-align:left;color:var(--ink);background:var(--card);border:1.5px solid var(--cardb);border-radius:14px;padding:13px 15px;font:inherit;cursor:pointer;transition:border-color .15s,transform .1s}
+.opt:hover:not(:disabled){border-color:var(--brand2)}
+.opt:active:not(:disabled){transform:scale(.99)}
+.opt:disabled{cursor:default}
+.opt b{flex:none;width:28px;height:28px;border-radius:8px;display:grid;place-items:center;background:var(--cardb);font-size:14px}
+.opt.right{background:var(--goodbg);border-color:var(--good)}
+.opt.wrong{background:var(--badbg);border-color:var(--bad)}
+.why{margin-top:16px;padding:12px 14px;border-radius:12px;background:var(--card);border:1px solid var(--cardb)}
+.btn{margin-top:16px;background:linear-gradient(90deg,var(--brand),var(--brand2));color:var(--on);border:0;border-radius:14px;padding:13px 26px;font:700 17px Outfit,sans-serif;cursor:pointer}
+.bar{height:8px;background:var(--cardb);border-radius:8px;overflow:hidden;margin:6px 0 16px}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--brand),var(--brand2));transition:width .3s}
+.row{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:15px}
+.link{background:none;border:0;color:var(--muted);font:inherit;cursor:pointer;padding:4px 0}
+.ring{display:block;margin:6px auto 4px}
+.rev{margin-top:20px;display:grid;gap:8px}
+.rev div{padding:11px 14px;font-size:15px;border-radius:12px}
+.navrow{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:16px}
+.navrow .btn{margin-top:0}
+.ghost:disabled{opacity:.4;cursor:default}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.chip2{background:var(--card);border:1.5px solid var(--cardb);color:var(--ink);border-radius:999px;padding:7px 14px;font:inherit;font-size:14px;cursor:pointer}
+.chip2.on{background:linear-gradient(90deg,var(--brand),var(--brand2));color:var(--on);border-color:transparent;font-weight:700}
+h2.sec{margin:34px 0 6px;font-size:24px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.tile{display:flex;gap:12px;align-items:center;text-align:left;color:var(--ink);padding:14px;font:inherit;cursor:pointer;transition:transform .15s,border-color .15s}
+.tile:hover{transform:translateY(-2px);border-color:var(--brand2)}
+.ico.sm{width:44px;height:44px;font-size:22px;border-radius:12px;flex:none}
+.muted2{color:var(--muted);font-size:14px}
+.rin{display:flex;gap:10px;margin:12px 0}
+.rin input{flex:1;min-width:0;background:var(--card);border:1.5px solid var(--cardb);color:var(--ink);border-radius:14px;padding:12px 14px;font:inherit;font-size:17px}
+.rin input:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.rin .btn{margin-top:0}
+.chip3{background:var(--goodbg);border:1px solid var(--good);border-radius:999px;padding:4px 12px;font-size:14px}
+.chip3.miss{background:var(--badbg);border-color:var(--bad)}
+button{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+button.logo{display:inline-flex;align-items:center;gap:10px}
+button.logo img{display:block;border-radius:10px}
+button.logo{background:none;border:0;color:var(--ink);padding:4px 0;cursor:pointer}
+.mapbox{position:relative;width:100%;max-width:600px;margin:14px auto 0;aspect-ratio:1/1;touch-action:none;user-select:none;-webkit-user-select:none}
+.mapbox.flat{aspect-ratio:4/3}
+#mg{width:100%;height:100%;display:block;cursor:grab;touch-action:none}
+#mg:active{cursor:grabbing}
+#mg .sea{fill:rgba(var(--pc),.1);stroke:rgba(var(--pc),.5);stroke-width:1.2}
+#mg .grat{fill:none;stroke:rgba(var(--pc),.15);stroke-width:.5}
+#mg .c{fill:rgba(var(--pc),.4);stroke:rgba(var(--pc),.75);stroke-width:.4;cursor:pointer}
+#mg .c:hover{fill:rgba(var(--pc),.65)}
+#mg .c.vis{fill:rgba(52,211,153,.45)}
+#mg .c.sel{fill:var(--amber)}
+#mg .c.ok{fill:var(--good)}
+#mg .c.no{fill:var(--bad)}
+.opt.dim{opacity:.35}
+#mg .c.rev{fill:var(--good);animation:pls .8s ease-in-out infinite alternate}
+@keyframes pls{to{opacity:.5}}
+.mctl{position:absolute;right:6px;bottom:6px;display:flex;flex-direction:column;gap:6px}
+.mb{width:42px;height:42px;border-radius:50%;border:1px solid var(--cardb);background:var(--card);color:var(--ink);font:700 19px Outfit,sans-serif;cursor:pointer;backdrop-filter:blur(8px)}
+.mb:hover{border-color:var(--brand2)}
+.mact{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:14px}
+.mact .btn{margin-top:0}
+</style>
+</head>
+<body>
+<canvas id="bg"></canvas><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+<main>
+<div class="nav"><button class="logo" id="logo" type="button" aria-label="Go to home"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IlByYWN0aWNlIEh1YiBsb2dvIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYmciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM3QzVDRkYiLz48c3RvcCBvZmZzZXQ9Ii41NSIgc3RvcC1jb2xvcj0iIzVCOENGRiIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzIyRDNFRSIvPjwvbGluZWFyR3JhZGllbnQ+CiAgICA8cmFkaWFsR3JhZGllbnQgaWQ9Imdsb2JlIiBjeD0iLjM1IiBjeT0iLjMiIHI9Ii45Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM5QkYwRkYiLz48c3RvcCBvZmZzZXQ9Ii42IiBzdG9wLWNvbG9yPSIjM0ZCNkY1Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMkE3QkU4Ii8+PC9yYWRpYWxHcmFkaWVudD4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iZ2xvdyIgY3g9Ii41IiBjeT0iLjUiIHI9Ii41Ij48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iLjQ1Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz48L3JhZGlhbEdyYWRpZW50PgogICAgPGNsaXBQYXRoIGlkPSJjIj48Y2lyY2xlIGN4PSIyNTYiIGN5PSIyODIiIHI9IjE1MCIvPjwvY2xpcFBhdGg+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iMTIwIiBmaWxsPSJ1cmwoI2JnKSIvPgogIDxjaXJjbGUgY3g9IjI1NiIgY3k9IjI4MiIgcj0iMjE1IiBmaWxsPSJ1cmwoI2dsb3cpIi8+CiAgPGNpcmNsZSBjeD0iMjU2IiBjeT0iMjgyIiByPSIxNTAiIGZpbGw9InVybCgjZ2xvYmUpIi8+CiAgPGcgY2xpcC1wYXRoPSJ1cmwoI2MpIiBmaWxsPSIjN0NFM0ExIj4KICAgIDxwYXRoIGQ9Ik0xNTAgMjE1YzMwLTM0IDc4LTMwIDk4LTYgMTQgMjAtNCAzOC0yNiA0Mi0xNiAzLTIwIDIyLTM4IDI0LTMwIDQtNTItMzAtMzQtNjB6Ii8+CiAgICA8cGF0aCBkPSJNMjkyIDI1MGMyNi0xOCA3MC0xMCA4MiAyMiAxMCAyOC0xMiA0NC0zMCA2Mi0xNCAxNC0xMiA0MC0zNCA0Ni0yNiA2LTM0LTMwLTMwLTU4IDMtMjYtNi01NCAxMi03MnoiLz4KICAgIDxwYXRoIGQ9Ik0zMDAgMTYwYzE4LTEwIDQ0LTQgNTIgMTItMTQgMTItNDAgMTYtNTItMTJ6Ii8+CiAgPC9nPgogIDxwYXRoIGQ9Ik0xMzAgMjUwYzE0LTYwIDgwLTEwNCAxNTAtOTgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLW9wYWNpdHk9Ii41IiBzdHJva2Utd2lkdGg9IjEyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8ZyBmaWxsPSIjMUIxRjRCIj48ZWxsaXBzZSBjeD0iMjE0IiBjeT0iMjkwIiByeD0iMTMiIHJ5PSIxNyIvPjxlbGxpcHNlIGN4PSIyOTgiIGN5PSIyOTAiIHJ4PSIxMyIgcnk9IjE3Ii8+PC9nPgogIDxnIGZpbGw9IiNmZmYiPjxjaXJjbGUgY3g9IjIxOSIgY3k9IjI4MyIgcj0iNSIvPjxjaXJjbGUgY3g9IjMwMyIgY3k9IjI4MyIgcj0iNSIvPjwvZz4KICA8cGF0aCBkPSJNMjIyIDMyNnEzNCAzNCA2OCAwIiBmaWxsPSJub25lIiBzdHJva2U9IiMxQjFGNEIiIHN0cm9rZS13aWR0aD0iMTIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDxjaXJjbGUgY3g9IjE5MCIgY3k9IjMxOCIgcj0iMTQiIGZpbGw9IiNGRjhGQjgiIG9wYWNpdHk9Ii42Ii8+PGNpcmNsZSBjeD0iMzIyIiBjeT0iMzE4IiByPSIxNCIgZmlsbD0iI0ZGOEZCOCIgb3BhY2l0eT0iLjYiLz4KICA8Zz4KICAgIDxwYXRoIGQ9Ik0yNTYgODJsMTA4IDQwLTEwOCA0MC0xMDgtNDB6IiBmaWxsPSIjMUIxRjRCIi8+CiAgICA8cGF0aCBkPSJNMjAwIDE0NnYzOHE1NiAzMCAxMTIgMHYtMzhsLTU2IDIweiIgZmlsbD0iIzJCMzA3MCIvPgogICAgPHBhdGggZD0iTTM2NCAxMjJ2NjIiIHN0cm9rZT0iI0ZGQzg1NyIgc3Ryb2tlLXdpZHRoPSI5IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz48Y2lyY2xlIGN4PSIzNjQiIGN5PSIxOTIiIHI9IjEyIiBmaWxsPSIjRkZDODU3Ii8+CiAgPC9nPgogIDxwYXRoIGQ9Ik05NiAxMThsOSAyOCAyOCA5LTI4IDktOSAyOC05LTI4LTI4LTkgMjgtOXoiIGZpbGw9IiNGRkM4NTciLz4KICA8cGF0aCBkPSJNNDI0IDMzMGw3IDIwIDIwIDctMjAgNy03IDIwLTctMjAtMjAtNyAyMC03eiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjkiLz4KICA8Y2lyY2xlIGN4PSIxMDgiIGN5PSI0MDAiIHI9IjkiIGZpbGw9IiNGRjhGQjgiLz48Y2lyY2xlIGN4PSI0MjAiIGN5PSIyMzgiIHI9IjciIGZpbGw9IiNGRkM4NTciLz4KPC9zdmc+Cg==" alt="" width="40" height="40"><span>Practice Hub</span></button><span><span class="chip" id="streak"></span> <button class="ghost" id="theme" type="button">Theme</button></span></div>
+
+<section id="home">
+  <h1>Sharpen your mind a little every day.</h1>
+  <p class="lead">Choose a topic, pick a subtopic and round length, then play. Questions you have already seen are skipped until you finish the whole bank.</p>
+  <p class="muted2" id="fact" style="margin:0 0 12px"></p>
+  <button class="glass cat" id="dailycard" type="button" style="margin-bottom:14px;border-color:var(--amber)"><span class="ico">📅</span><span><h3>Daily Challenge</h3><p id="dstat"></p></span></button>
+  <button class="glass cat" id="mapcard" type="button" style="margin-bottom:14px;border-color:var(--brand2)"><span class="ico">🌍</span><span><h3>World Map Challenge</h3><p>Pick a game: tap the country on a map, multiple choice, type the answer, or search and explore. No spinning needed.</p><div class="stats"><span id="mapbest"></span></div></span></button>
+  <div class="grid" id="cats"></div>
+  <h2 class="sec">Name-them-all tests</h2>
+  <p class="lead" style="margin:0 0 14px">Type as many names as you can before time runs out. For example, how many countries of Asia can you list?</p>
+  <div class="tiles" id="tests"></div>
+  <p style="margin-top:22px"><button class="ghost" id="reset" type="button">Reset all progress</button></p>
+</section>
+
+<section id="map" class="hidden">
+  <div class="row"><button class="ghost" id="mback" type="button">← Back</button><span id="mscore" class="muted2"></span></div>
+  <div class="glass qwrap" id="mmenu2" style="margin-top:14px">
+    <h2 style="font-size:26px">World Map Games</h2>
+    <p class="muted2" style="margin:6px 0 14px">Pick a game and play. Quiz games start instantly. Map games use a flat map that zooms to your region, so there is nothing to spin. <button type="button" class="chip3" id="mstat" style="cursor:pointer;color:inherit;font:inherit;font-size:14px"></button></p>
+    <div class="tiles" id="mgames"></div>
+    <span class="tag" style="margin-top:18px">Region</span><div class="chips" id="mreg"></div>
+    <span class="tag" style="margin-top:14px">Or a specific area</span><div class="chips" id="mreg2"></div>
+    <span class="tag" style="margin-top:14px">Countries</span><div class="chips" id="mpool"></div>
+    <span class="tag" style="margin-top:14px">Questions per round</span><div class="chips" id="mlen"></div>
+    <p class="muted2" id="mprog" style="margin-top:14px"></p>
+    <p class="why" id="mnote" aria-live="polite" style="margin:10px 0 0;display:none"></p>
+  </div>
+  <div id="mgame" class="hidden">
+    <div class="glass qwrap" style="margin-top:14px">
+      <div class="bar"><i id="mfill"></i></div>
+      <span class="tag" id="mtag"></span><div class="q" id="mq"></div>
+      <div class="opts" id="mopts"></div>
+      <div class="rin hidden" id="mtype"><input id="minp" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Type your answer and press Enter" aria-label="Your answer"><button class="btn" id="mok" type="button">Check</button></div>
+      <div id="msearch" class="hidden"><div class="rin"><input id="msin" type="search" autocomplete="off" spellcheck="false" placeholder="Search any country…" aria-label="Search a country"><button class="btn" id="mrand" type="button">Random</button></div><div class="chips" id="msug"></div></div>
+      <p class="why" id="minfo" aria-live="polite" style="margin:12px 0"></p>
+      <div class="mapbox flat hidden" id="mapbox"><svg id="mg" role="img" aria-label="Interactive world map"></svg>
+        <div class="mctl"><button class="mb" id="mzi" type="button" aria-label="Zoom in">+</button><button class="mb" id="mzo" type="button" aria-label="Zoom out">−</button><button class="mb" id="mrs" type="button" aria-label="Zoom to region">⟲</button><button class="mb" id="mtg" type="button" aria-label="Switch between globe and flat map">🌐</button></div></div>
+      <div class="mact"><button class="ghost" id="mhint" type="button">Hint</button><button class="ghost" id="mshow" type="button">Show me</button><button class="btn hidden" id="mnext" type="button">Next</button><button class="ghost" id="mmenu" type="button">← Games</button></div>
+    </div>
+  </div>
+  <div class="glass qwrap hidden" id="mdone" style="margin-top:14px;text-align:center"><div id="mdscore" style="font:800 48px Outfit,sans-serif"></div><p class="lead" id="mdsum" style="margin:4px auto 12px"></p><div class="chips" id="mdchips" style="justify-content:center"></div><button class="btn" id="magain" type="button">Play again</button> <button class="ghost" id="mretry" type="button" style="margin-left:10px">Retry missed</button> <button class="ghost" id="mdmenu" type="button" style="margin-left:10px">All games</button></div>
+</section>
+
+<section id="recall" class="hidden">
+  <div class="row"><button class="ghost" id="rback" type="button">← All topics</button><span id="rtime"></span></div>
+  <div class="glass qwrap" style="margin-top:14px">
+    <span class="tag">Name-them-all test</span>
+    <div class="q" id="rtitle"></div>
+    <div id="rintro"><p class="muted2" id="rinfo" style="margin-bottom:6px"></p><button class="btn" id="rt1" type="button"></button> <button class="ghost" id="rt2" type="button" style="margin-left:10px">Practice without timer</button></div>
+    <div id="rplay" class="hidden">
+      <div class="row"><span id="rcount"></span><span id="rmsg"></span></div>
+      <div class="bar"><i id="rfill"></i></div>
+      <div class="rin"><input id="rinput" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Type a name and press Enter" aria-label="Type a name"><button class="btn" id="radd" type="button">Add</button></div>
+      <div class="chips" id="rfound"></div>
+      <button class="ghost" id="rfin" type="button" style="margin-top:16px">Finish and show answers</button>
+    </div>
+    <div id="rdone" class="hidden" style="text-align:center">
+      <div class="big" id="rscore" style="font:800 56px Outfit,sans-serif"></div>
+      <p class="lead" id="rsum" style="margin:6px auto 14px"></p>
+      <div id="rmwrap" style="text-align:left"><span class="tag">You missed</span><div class="chips" id="rmiss"></div></div>
+      <button class="btn" id="ragain" type="button">Try again</button>
+    </div>
+  </div>
+</section>
+
+<section id="setup" class="hidden">
+  <button class="ghost" id="sback" type="button">← All topics</button>
+  <h2 id="stitle" style="margin:18px 0 6px"></h2><p class="lead" id="sinfo" style="margin:0 0 16px"></p>
+  <div class="glass qwrap"><span class="tag">Choose a subtopic</span><div class="chips" id="chips"></div>
+  <span class="tag" style="margin-top:20px">Questions per round</span><div class="chips" id="lens"></div>
+  <button class="btn" id="go" type="button">Start round</button>
+  <p class="stats" style="margin-top:14px">Keyboard: press A to D or 1 to 4 to answer, and use the left and right arrow keys to move between questions.</p></div>
+</section>
+
+<section id="quiz" class="hidden">
+  <div class="row"><button class="ghost" id="quit" type="button">← All topics</button><span id="count"></span></div>
+  <div class="bar"><i id="fill"></i></div>
+  <div class="glass qwrap">
+    <span class="tag" id="tag"></span>
+    <div class="q" id="qt"></div>
+    <div class="opts" id="opts"></div>
+    <div id="after"></div>
+  </div>
+</section>
+
+<section id="result" class="hidden">
+  <div class="glass qwrap" style="text-align:center">
+    <h2>Round complete</h2>
+    <svg class="ring" width="170" height="170" viewBox="0 0 170 170" aria-hidden="true"><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#7C5CFF"/><stop offset="1" stop-color="#22D3EE"/></linearGradient></defs><circle cx="85" cy="85" r="72" fill="none" stroke="currentColor" stroke-opacity=".15" stroke-width="12"/><circle id="arc" cx="85" cy="85" r="72" fill="none" stroke="url(#g)" stroke-width="12" stroke-linecap="round" stroke-dasharray="452" stroke-dashoffset="452" transform="rotate(-90 85 85)" style="transition:stroke-dashoffset 1s"/><text id="sc" x="85" y="98" text-anchor="middle" font-family="Outfit,sans-serif" font-weight="800" font-size="40" fill="currentColor"></text></svg>
+    <p class="lead" id="msg" style="margin:6px auto 0"></p>
+    <button class="btn" id="again" type="button">Play again</button>
+    <button class="ghost" id="chg" type="button" style="margin-left:12px">Change subtopic</button>
+    <button class="ghost" id="home2" type="button" style="margin-left:12px">← All topics</button>
+  </div>
+  <div class="rev" id="rev"></div>
+</section>
+</main>
+
+<script>
+const $=id=>document.getElementById(id),rnd=n=>Math.floor(Math.random()*n);
+const shuf=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=rnd(i+1);[a[i],a[j]]=[a[j],a[i]]}return a};
+const pr=s=>s.split(";").map(x=>x.split("|"));
+const mk=(L,k,t,a,p,e)=>L.push({k,t,a,p,e:e||""});
+function bi(L,k,raw,f,b,e){const r=pr(raw),c0=r.map(x=>x[0]),c1=r.map(x=>x[1]);r.forEach(([x,y])=>{const ex=e?e(x,y):"";mk(L,k,f(x),y,c1,ex);if(b)mk(L,k,b(y),x,c0,ex)})}
+
+/* ---------- GENERAL KNOWLEDGE ---------- */
+const CAP="India|New Delhi;Pakistan|Islamabad;Bangladesh|Dhaka;Nepal|Kathmandu;Bhutan|Thimphu;China|Beijing;Japan|Tokyo;South Korea|Seoul;Thailand|Bangkok;Vietnam|Hanoi;Indonesia|Jakarta;Malaysia|Kuala Lumpur;Philippines|Manila;Afghanistan|Kabul;Iran|Tehran;Iraq|Baghdad;Saudi Arabia|Riyadh;Turkey|Ankara;Egypt|Cairo;Kenya|Nairobi;Nigeria|Abuja;Ethiopia|Addis Ababa;Ghana|Accra;Morocco|Rabat;Algeria|Algiers;Libya|Tripoli;Sudan|Khartoum;Tanzania|Dodoma;Uganda|Kampala;Zimbabwe|Harare;Zambia|Lusaka;Angola|Luanda;Senegal|Dakar;Madagascar|Antananarivo;France|Paris;Germany|Berlin;Italy|Rome;Spain|Madrid;Portugal|Lisbon;United Kingdom|London;Ireland|Dublin;Belgium|Brussels;Switzerland|Bern;Austria|Vienna;Poland|Warsaw;Czech Republic|Prague;Hungary|Budapest;Greece|Athens;Sweden|Stockholm;Norway|Oslo;Finland|Helsinki;Denmark|Copenhagen;Russia|Moscow;Ukraine|Kyiv;Romania|Bucharest;Bulgaria|Sofia;Serbia|Belgrade;Croatia|Zagreb;Iceland|Reykjavik;United States|Washington, D.C.;Canada|Ottawa;Mexico|Mexico City;Brazil|Brasilia;Argentina|Buenos Aires;Chile|Santiago;Peru|Lima;Colombia|Bogota;Venezuela|Caracas;Cuba|Havana;Ecuador|Quito;Uruguay|Montevideo;Jamaica|Kingston;Australia|Canberra;New Zealand|Wellington;Mongolia|Ulaanbaatar;Kazakhstan|Astana;Uzbekistan|Tashkent;Myanmar|Naypyidaw;Cambodia|Phnom Penh;Laos|Vientiane;Qatar|Doha;United Arab Emirates|Abu Dhabi;Oman|Muscat;Kuwait|Kuwait City;Jordan|Amman;Lebanon|Beirut;Syria|Damascus;Yemen|Sanaa;Maldives|Male;Tunisia|Tunis";
+const CUR="Japan|Yen;United Kingdom|Pound sterling;United States|US dollar;India|Indian rupee;China|Yuan;Russia|Ruble;South Korea|Won;Thailand|Baht;Malaysia|Ringgit;Indonesia|Rupiah;Saudi Arabia|Saudi riyal;United Arab Emirates|UAE dirham;Turkey|Lira;Switzerland|Swiss franc;Sweden|Swedish krona;Norway|Norwegian krone;Poland|Zloty;Brazil|Real;Mexico|Mexican peso;South Africa|Rand;Nigeria|Naira;Kenya|Kenyan shilling;Egypt|Egyptian pound;Vietnam|Dong;Bangladesh|Taka;Nepal|Nepalese rupee;Pakistan|Pakistani rupee;Hungary|Forint;Czech Republic|Koruna;Iran|Iranian rial;Afghanistan|Afghani;Cambodia|Riel;Laos|Kip;Myanmar|Kyat;Mongolia|Tugrik;Ghana|Cedi;Ethiopia|Birr;Iraq|Iraqi dinar;Kuwait|Kuwaiti dinar;Bhutan|Ngultrum;Maldives|Rufiyaa;Canada|Canadian dollar;Australia|Australian dollar;Argentina|Argentine peso";
+const STA="Andhra Pradesh|Amaravati;Arunachal Pradesh|Itanagar;Assam|Dispur;Bihar|Patna;Chhattisgarh|Raipur;Goa|Panaji;Gujarat|Gandhinagar;Himachal Pradesh|Shimla;Jharkhand|Ranchi;Karnataka|Bengaluru;Kerala|Thiruvananthapuram;Madhya Pradesh|Bhopal;Maharashtra|Mumbai;Manipur|Imphal;Meghalaya|Shillong;Mizoram|Aizawl;Nagaland|Kohima;Odisha|Bhubaneswar;Rajasthan|Jaipur;Sikkim|Gangtok;Tamil Nadu|Chennai;Telangana|Hyderabad;Tripura|Agartala;Uttar Pradesh|Lucknow;Uttarakhand|Dehradun;West Bengal|Kolkata";
+const ELE="H|Hydrogen;He|Helium;Li|Lithium;C|Carbon;N|Nitrogen;O|Oxygen;F|Fluorine;Ne|Neon;Na|Sodium;Mg|Magnesium;Al|Aluminium;Si|Silicon;P|Phosphorus;S|Sulphur;Cl|Chlorine;Ar|Argon;K|Potassium;Ca|Calcium;Fe|Iron;Cu|Copper;Zn|Zinc;Ag|Silver;Sn|Tin;I|Iodine;Au|Gold;Hg|Mercury;Pb|Lead;U|Uranium;Pt|Platinum;Ni|Nickel;Mn|Manganese;Br|Bromine;B|Boron;Be|Beryllium;Cr|Chromium;W|Tungsten";
+const AUT="Charles Dickens|Oliver Twist;Jane Austen|Pride and Prejudice;William Shakespeare|Hamlet;Leo Tolstoy|War and Peace;Mark Twain|The Adventures of Tom Sawyer;George Orwell|Animal Farm;J. K. Rowling|Harry Potter;Rabindranath Tagore|Gitanjali;R. K. Narayan|Malgudi Days;Arundhati Roy|The God of Small Things;Kalki Krishnamurthy|Ponniyin Selvan;Mahatma Gandhi|My Experiments with Truth;Jawaharlal Nehru|The Discovery of India;A. P. J. Abdul Kalam|Wings of Fire;Salman Rushdie|Midnight’s Children;Homer|The Iliad;Miguel de Cervantes|Don Quixote;Victor Hugo|Les Misérables;Herman Melville|Moby-Dick;Ernest Hemingway|The Old Man and the Sea;Harper Lee|To Kill a Mockingbird;F. Scott Fitzgerald|The Great Gatsby;Charlotte Brontë|Jane Eyre;Emily Brontë|Wuthering Heights;Daniel Defoe|Robinson Crusoe;Jonathan Swift|Gulliver’s Travels;Lewis Carroll|Alice in Wonderland;J. R. R. Tolkien|The Lord of the Rings;Dante Alighieri|The Divine Comedy;Thiruvalluvar|Thirukkural;Ilango Adigal|Silappatikaram;Subramania Bharati|Panchali Sapatham;Vyasa|Mahabharata;Valmiki|Ramayana;Kalidasa|Abhijnanasakuntalam;Chetan Bhagat|Five Point Someone;Vikram Seth|A Suitable Boy;Amitav Ghosh|The Glass Palace";
+const INV="invented the telephone|Alexander Graham Bell;invented the practical light bulb|Thomas Edison;developed the first practical radio|Guglielmo Marconi;discovered penicillin|Alexander Fleming;proposed the law of universal gravitation|Isaac Newton;proposed the theory of relativity|Albert Einstein;discovered electromagnetic induction|Michael Faraday;introduced the printing press in Europe|Johannes Gutenberg;improved the steam engine|James Watt;made the first powered aeroplane flight|Orville and Wilbur Wright;discovered radium and polonium|Marie Curie;discovered X-rays|Wilhelm Röntgen;developed the smallpox vaccine|Edward Jenner;invented dynamite|Alfred Nobel;proposed evolution by natural selection|Charles Darwin;proposed the heliocentric model|Nicolaus Copernicus;invented the World Wide Web|Tim Berners-Lee;discovered the Raman effect|C. V. Raman;developed the rabies vaccine|Louis Pasteur;created the periodic table|Dmitri Mendeleev;discovered the electron|J. J. Thomson;discovered the atomic nucleus|Ernest Rutherford;developed the polio vaccine|Jonas Salk;invented the telegraph code|Samuel Morse;described the three laws of planetary motion|Johannes Kepler;invented the cotton gin|Eli Whitney";
+const FOU="Apple|Steve Jobs;Microsoft|Bill Gates;Amazon|Jeff Bezos;Tata Group|Jamsetji Tata;Infosys|N. R. Narayana Murthy;Reliance Industries|Dhirubhai Ambani;Google|Larry Page and Sergey Brin;Facebook|Mark Zuckerberg;Flipkart|Sachin and Binny Bansal";
+const LAN="Eiffel Tower|France;Taj Mahal|India;Great Wall|China;Colosseum|Italy;Statue of Liberty|United States;Big Ben|United Kingdom;Pyramids of Giza|Egypt;Sydney Opera House|Australia;Machu Picchu|Peru;Christ the Redeemer|Brazil;Burj Khalifa|United Arab Emirates;Angkor Wat|Cambodia;Petra|Jordan;Acropolis|Greece;Kremlin|Russia;Brandenburg Gate|Germany;Mount Fuji|Japan;Niagara Falls|Canada;Hagia Sophia|Turkey;Alhambra|Spain;Petronas Towers|Malaysia;Table Mountain|South Africa;Chichen Itza|Mexico;Borobudur|Indonesia;Matterhorn|Switzerland;Atomium|Belgium";
+const MON="Charminar|Hyderabad;Gateway of India|Mumbai;Red Fort|Delhi;Victoria Memorial|Kolkata;Meenakshi Amman Temple|Madurai;Brihadeeswarar Temple|Thanjavur;Mysore Palace|Mysuru;Golden Temple|Amritsar;Hawa Mahal|Jaipur;Gol Gumbaz|Vijayapura;Shore Temple|Mahabalipuram;Ramanathaswamy Temple|Rameswaram;Vivekananda Rock Memorial|Kanyakumari;Konark Sun Temple|Konark";
+const DAN="Bharatanatyam|Tamil Nadu;Kathakali|Kerala;Kuchipudi|Andhra Pradesh;Odissi|Odisha;Bihu|Assam;Garba|Gujarat;Kathak|Uttar Pradesh;Manipuri|Manipur;Ghoomar|Rajasthan;Yakshagana|Karnataka;Lavani|Maharashtra;Raut Nacha|Chhattisgarh";
+const TIT="Father of the Nation|Mahatma Gandhi;Iron Man of India|Sardar Vallabhbhai Patel;Missile Man of India|A. P. J. Abdul Kalam;Nightingale of India|Sarojini Naidu;Father of the Indian Constitution|B. R. Ambedkar;Father of the Green Revolution in India|M. S. Swaminathan;Father of the White Revolution|Verghese Kurien;Father of the Indian space programme|Vikram Sarabhai;Father of the Indian nuclear programme|Homi J. Bhabha;Father of Modern India|Raja Ram Mohan Roy;Lokmanya|Bal Gangadhar Tilak;Netaji|Subhas Chandra Bose;Grand Old Man of India|Dadabhai Naoroji";
+const REC="largest planet|Jupiter;red planet|Mars;hottest planet|Venus;smallest planet|Mercury;largest ocean|Pacific Ocean;highest mountain peak in the world|Mount Everest;largest country by area|Russia;smallest continent|Australia;largest hot desert|Sahara;largest mammal|Blue whale;fastest land animal|Cheetah;tallest animal|Giraffe;largest living bird|Ostrich;hardest natural substance|Diamond;lightest gas|Hydrogen;most abundant gas in Earth’s atmosphere|Nitrogen;closest star to Earth|Sun;largest organ of the human body|Skin;largest state of India by area|Rajasthan;smallest state of India by area|Goa;most populous state of India|Uttar Pradesh;tallest statue in the world|Statue of Unity";
+const GRP="a planet|Venus,Earth,Mars,Jupiter,Saturn,Uranus,Neptune;a river of India|Ganga,Yamuna,Godavari,Krishna,Kaveri,Narmada,Brahmaputra,Mahanadi,Tapti,Vaigai,Sutlej,Beas;an ocean|Pacific Ocean,Atlantic Ocean,Indian Ocean,Arctic Ocean,Southern Ocean;a continent|Asia,Africa,Europe,Australia,Antarctica,North America,South America;a metal|Iron,Copper,Gold,Silver,Zinc,Tin,Lead,Aluminium;a non-metal|Oxygen,Nitrogen,Carbon,Hydrogen,Sulphur,Chlorine,Helium,Neon;a mammal|Whale,Bat,Dolphin,Elephant,Tiger,Kangaroo,Horse,Monkey,Bear,Rabbit;a bird|Peacock,Sparrow,Eagle,Parrot,Owl,Crow,Pigeon,Penguin,Ostrich,Kingfisher;a district of Tamil Nadu|Chennai,Madurai,Coimbatore,Salem,Tiruchirappalli,Tirunelveli,Erode,Vellore,Thanjavur,Sivaganga,Ramanathapuram,Virudhunagar,Dindigul,Karur,Namakkal,Theni,Thoothukudi,Cuddalore,Kanyakumari,Nilgiris,Pudukkottai,Tiruvarur,Nagapattinam,Krishnagiri,Dharmapuri,Perambalur,Ariyalur,Tenkasi,Kallakurichi,Tirupattur;an Indian state|Kerala,Goa,Assam,Bihar,Gujarat,Haryana,Karnataka,Maharashtra,Manipur,Odisha,Punjab,Rajasthan,Sikkim,Tripura,Meghalaya,Mizoram,Nagaland,Jharkhand,Telangana,Uttarakhand,Chhattisgarh,Arunachal Pradesh,Himachal Pradesh,Madhya Pradesh,Andhra Pradesh,West Bengal;an Asian country|Japan,Nepal,Thailand,Vietnam,Indonesia,Iran,Mongolia,Bhutan;an African country|Kenya,Nigeria,Egypt,Ghana,Ethiopia,Morocco,Tanzania,Uganda;a European country|France,Germany,Spain,Poland,Greece,Norway,Austria,Ireland;a festival|Diwali,Pongal,Holi,Onam,Eid,Christmas,Baisakhi,Navratri,Ugadi,Durga Puja;an Indian sportsperson|Sachin Tendulkar,Virat Kohli,P. V. Sindhu,Neeraj Chopra,Mary Kom,Viswanathan Anand,M. S. Dhoni,Dhyan Chand,Milkha Singh,Saina Nehwal;a Mughal emperor|Babur,Humayun,Akbar,Jahangir,Shah Jahan,Aurangzeb;a famous scientist|Isaac Newton,Albert Einstein,Charles Darwin,Galileo Galilei,Michael Faraday,Marie Curie,C. V. Raman,S. Chandrasekhar;a programming language|Python,Java,JavaScript,Ruby,Kotlin,Swift,Rust,PHP";
+function buildGK(){const L=[];
+ bi(L,"World capitals",CAP,x=>`What is the capital of ${x}?`,y=>`${y} is the capital of which country?`,(x,y)=>`The capital of ${x} is ${y}.`);
+ bi(L,"Currencies",CUR,x=>`Which currency is used in ${x}?`,y=>`Which country uses the ${y}?`,(x,y)=>`${x} uses the ${y}.`);
+ bi(L,"Indian states",STA,x=>`What is the capital of ${x}?`,y=>`${y} is the capital of which Indian state?`,(x,y)=>`${y} is the capital of ${x}.`);
+ bi(L,"Chemical elements",ELE,x=>`Which element has the chemical symbol ${x}?`,y=>`What is the chemical symbol of ${y}?`,(x,y)=>`${x} stands for ${y}.`);
+ bi(L,"Books and authors",AUT,x=>`Which of these works was written by ${x}?`,y=>`Who wrote ${y}?`,(x,y)=>`${y} was written by ${x}.`);
+ bi(L,"Inventions",INV,x=>`Who ${x}?`,y=>`Which achievement is ${y} best known for?`,(x,y)=>`${y} ${x}.`);
+ bi(L,"Founders",FOU,x=>`Who founded ${x}?`,y=>`${y} founded which company?`,(x,y)=>`${x} was founded by ${y}.`);
+ bi(L,"Landmarks",LAN,x=>`In which country is ${x} located?`,y=>`Which landmark is located in ${y}?`,(x,y)=>`${x} is in ${y}.`);
+ bi(L,"Indian monuments",MON,x=>`In which place is ${x} located?`,y=>`Which monument is located in ${y}?`,(x,y)=>`${x} is in ${y}.`);
+ bi(L,"Dance forms",DAN,x=>`${x} is a traditional dance form of which Indian state?`,y=>`Which dance form belongs to ${y}?`,(x,y)=>`${x} comes from ${y}.`);
+ bi(L,"Famous titles",TIT,x=>`Who is known as the ${x}?`,y=>`${y} is known by which title?`,(x,y)=>`${y} is known as the ${x}.`);
+ bi(L,"Records",REC,x=>`Which is the ${x}?`,null,(x,y)=>`The ${x} is ${y}.`);
+ const G=pr(GRP).map(([lab,s])=>[lab,s.split(",")]),all=[].concat(...G.map(g=>g[1]));
+ G.forEach(([lab,items])=>{const out=all.filter(z=>!items.includes(z));items.forEach(it=>{
+  mk(L,"Odd one out",`Which of these is ${lab}?`,it,out,`${it} is ${lab}.`);
+  mk(L,"Odd one out",`${it} is ${lab}. Which of these is NOT ${lab}?`,out[rnd(out.length)],items.filter(z=>z!==it),`The others are all ${lab.replace(/^an? /,"")}s.`)})});
+ return L}
+
+/* ---------- GRAMMAR ---------- */
+const VB="go|went|gone;do|did|done;show|showed|shown;choose|chose|chosen;bite|bit|bitten;hide|hid|hidden;forget|forgot|forgotten;take|took|taken;shake|shook|shaken;wake|woke|woken;freeze|froze|frozen;steal|stole|stolen;speak|spoke|spoken;break|broke|broken;drive|drove|driven;ride|rode|ridden;rise|rose|risen;write|wrote|written;eat|ate|eaten;see|saw|seen;give|gave|given;fall|fell|fallen;wear|wore|worn;tear|tore|torn;draw|drew|drawn;blow|blew|blown;throw|threw|thrown;grow|grew|grown;know|knew|known;fly|flew|flown;swim|swam|swum;drink|drank|drunk;begin|began|begun;sing|sang|sung;ring|rang|rung;sink|sank|sunk;swear|swore|sworn;forgive|forgave|forgiven;prove|proved|proven";
+const SUB="I|0;You|0;He|1;She|1;We|0;They|0;My brother|1;The students|0;Our teacher|1;The birds|0";
+const ART="apple|an;hour|an;university|a;umbrella|an;uniform|a;unicorn|a;egg|an;owl|an;banana|a;school|a;engineer|an;ocean|an;hotel|a;heir|an;eye|an;year|a;island|an;user|a;idea|an;actor|an;doctor|a;ant|an;airport|an;nurse|a;artist|an;student|a;umpire|an;uncle|an;table|a;onion|an;European|a;honour|an;horse|a;X-ray|an;unit|a;orange|an;bus|a";
+const PRE="She is afraid ___ spiders.|of;He is good ___ drawing.|at;The meeting starts ___ 5 p.m.|at;My birthday is ___ March.|in;He was born ___ 12 May.|on;He arrived ___ the airport at noon.|at;I agree ___ you.|with;She is married ___ a doctor.|to;We depend ___ rain for crops.|on;She is proud ___ her son.|of;I am looking ___ my keys.|for;They are fond ___ cricket.|of;Pay attention ___ the teacher.|to;He is allergic ___ dust.|to;I prefer tea ___ coffee.|to;He is keen ___ learning English.|on;He suffers ___ fever.|from;She succeeded ___ passing the test.|in;He insisted ___ paying.|on;The students listened ___ the story.|to;She is responsible ___ the project.|for;She is interested ___ music.|in;We go to school ___ bus.|by;This gift is ___ you.|for;He apologised ___ being late.|for;I have waited ___ two hours.|for;He has lived here ___ 2015.|since;Exams begin ___ Monday.|on;The festival is ___ January.|in;I live ___ 12 Gandhi Street.|at;This design is similar ___ that one.|to;She is jealous ___ her friend.|of;He is capable ___ winning.|of;She is famous ___ her songs.|for;This book belongs ___ me.|to;We rely ___ our teachers.|on;They complained ___ the noise.|about;Don’t laugh ___ others.|at";
+const CNF="I left my bag over ___.|there|their,they’re,the;___ going to be late.|They’re|Their,There,Them;The dog wagged ___ tail.|its|it’s,its’,it;___ raining outside.|It’s|Its,Its’,Is;Is this ___ pen?|your|you’re,yours’,you;___ welcome to join us.|You’re|Your,Yore,Youre;She is taller ___ me.|than|then,that,as;First we ate, ___ we left.|then|than,when,that;The medicine had a strong ___ on him.|effect|affect,effects,effected;Bad weather can ___ our plans.|affect|effect,effects,affecting;I ___ the answer yesterday.|knew|new,know,known;Let’s go ___ the market.|to|too,two,tow;It is ___ hot to play.|too|to,two,tho;I have ___ pens.|two|to,too,tow;The teacher gave ___ a book.|me|I,my,mine;He ___ the match yesterday.|won|win,wan,winned;The teacher will ___ us grammar.|teach|learn,taught,teached;Can I ___ your pen for a minute?|borrow|lend,lent,loan;Please ___ me your notes.|lend|borrow,borrowed,loan;Water ___ at 100°C.|boils|boil,boiling,boiled;The sun ___ in the east.|rises|raises,rise,raised;Please ___ your hand if you know.|raise|rise,rose,risen;She ___ on the sofa.|sat|set,sit,sitted;Everyone ___ happy today.|is|are,were,be;A number of students ___ absent.|are|is,was,be;The news ___ true.|is|are,were,be;Either of the answers ___ correct.|is|are,were,be;He, as well as his friends, ___ coming.|is|are,were,be;I am ___ honest man.|an|a,the,some";
+const ING=b=>({swim:"swimming",begin:"beginning",forget:"forgetting"})[b]||(/[^e]e$/.test(b)?b.slice(0,-1)+"ing":b+"ing");
+const TH=b=>/[^aeiou]y$/.test(b)?b.slice(0,-1)+"ies":/(s|sh|ch|x|z|o)$/.test(b)?b+"es":b+"s";
+function buildGR(){const L=[],S=pr(SUB).map(([s,f])=>[s,+f]),SS=S.filter(x=>x[1]),n=S.length;
+ const low=s=>s==="I"?s:s[0].toLowerCase()+s.slice(1);
+ pr(VB).forEach(([b,pa,pp],v)=>{const th=TH(b),ing=ING(b),at=k=>S[(v+k)%n];
+  for(let k=0;k<8;k++){const [s,f]=at(k);mk(L,"Present tense",`${s} ___ (${b}) every day.`,f?th:b,[b,th,ing,pa],f?"A singular third-person subject takes -s or -es in the simple present.":`With “${s}” the simple present uses the base form.`)}
+  for(let k=0;k<3;k++){const [s]=at(k+2);mk(L,"Past tense",`Yesterday, ${low(s)} ___ (${b}).`,pa,[b,th,pp,ing],`The simple past of “${b}” is “${pa}”.`)}
+  for(let k=0;k<4;k++){const [s,f]=at(k+4);mk(L,"Present perfect",`${s} ${f?"has":"have"} already ___ (${b}).`,pp,[pa,b,ing,th],`The present perfect uses the past participle: ${pp}.`)}
+  for(let k=0;k<5;k++){const [s,f]=at(k+1),ax=s==="I"?"am":f?"is":"are";mk(L,"Continuous tense",`${s} ${ax} ___ (${b}) right now.`,ing,[b,pa,pp,th],`The present continuous uses the -ing form: ${ing}.`)}
+  const s1=at(v%4+3)[0],s2=SS[v%SS.length][0];
+  mk(L,"Auxiliary verbs",`${at(5)[0]} did not ___ (${b}) yesterday.`,b,[pa,pp,th,ing],"After “did not”, the main verb stays in the base form.");
+  mk(L,"Auxiliary verbs",`Will ${low(s1)} ___ (${b}) tomorrow?`,b,[pa,pp,th,ing],"After “will”, use the base form.");
+  mk(L,"Auxiliary verbs",`Does ${low(s2)} ___ (${b}) every morning?`,b,[pa,pp,th,ing],"After “does”, use the base form.");
+  mk(L,"Verb forms",`What is the past tense of “${b}”?`,pa,[pp,th,ing,b],`${b} → ${pa} → ${pp}.`);
+  mk(L,"Verb forms",`What is the past participle of “${b}”?`,pp,[pa,th,ing,b],`${b} → ${pa} → ${pp}.`)});
+ pr(ART).forEach(([w,a])=>mk(L,"Articles",`Which indefinite article goes before “${w}”?`,a,["a","an","the","some"],`Use “an” before a vowel sound and “a” before a consonant sound: ${a} ${w}.`));
+ const PP=["in","on","at","by","for","with","of","to","from","since","about"];
+ pr(PRE).forEach(([t,a])=>mk(L,"Prepositions",t,a,PP,`The correct phrase is: ${t.replace("___",a)}`));
+ pr(CNF).forEach(([t,a,w])=>mk(L,"Confusing words",t,a,w.split(","),`The correct sentence: ${t.replace("___",a)}`));
+ return L}
+
+/* ---------- ENGLISH KNOWLEDGE ---------- */
+const SYN="happy|joyful;big|large;small|tiny;fast|quick;smart|clever;begin|start;end|finish;angry|furious;sad|sorrowful;beautiful|lovely;ugly|hideous;brave|courageous;afraid|scared;strong|powerful;weak|feeble;rich|wealthy;poor|needy;calm|peaceful;noisy|loud;clean|spotless;dirty|filthy;difficult|hard;easy|simple;important|vital;boring|dull;funny|amusing;kind|gentle;rude|impolite;honest|truthful;lazy|idle;busy|occupied;tired|weary;hungry|starving;thirsty|parched;old|aged;new|fresh;cold|chilly;hot|scorching;wet|damp;dry|arid;bright|radiant;dark|dim;shiny|glossy;rough|coarse;fat|plump;thin|slim;tall|lofty;short|brief;long|lengthy;wide|broad;deep|profound;heavy|weighty;cheap|inexpensive;expensive|costly;famous|renowned;unknown|obscure;strange|odd;normal|ordinary;rare|scarce;common|usual;false|fake;wrong|incorrect;same|identical;enough|sufficient;many|numerous;full|complete;empty|vacant;buy|purchase;sell|vend;give|donate;take|grab;help|assist;stop|halt;go|depart;come|arrive;look|gaze;say|state;ask|inquire;answer|reply;talk|converse;walk|stroll;run|sprint;jump|leap;laugh|giggle;cry|weep;smile|grin;think|ponder;know|understand;love|adore;hate|detest;want|desire;make|create;break|shatter;fix|repair;hide|conceal;show|display;find|discover;lose|misplace;win|triumph;fight|combat;choose|select;allow|permit;forbid|prohibit;keep|retain;throw|hurl;pull|drag;push|shove;hurry|rush";
+const ANT="hot|cold;up|down;in|out;day|night;black|white;good|bad;rich|poor;happy|sad;strong|weak;fast|slow;early|late;hard|soft;heavy|light;wide|narrow;deep|shallow;full|empty;clean|dirty;old|young;tall|short;thick|thin;north|south;east|west;love|hate;friend|enemy;victory|defeat;truth|lie;birth|death;arrive|depart;accept|reject;increase|decrease;expand|contract;ancient|modern;brave|cowardly;generous|stingy;honest|dishonest;polite|rude;optimist|pessimist;visible|invisible;possible|impossible;permanent|temporary;rural|urban;major|minor;maximum|minimum;noisy|quiet;public|private;success|failure;wise|foolish;future|past;above|below;before|after;inside|outside;give|take;buy|sell;lend|borrow;remember|forget;push|pull;open|close;begin|end;win|lose;laugh|cry;sweet|sour;rough|smooth;sharp|blunt;dry|wet;bright|dim;awake|asleep;guilty|innocent;strict|lenient;vague|precise;ascend|descend;export|import;superior|inferior;profit|loss;attack|defend;peace|war;create|destroy;complex|simple;arrogant|humble";
+const MEA="benevolent|kind and generous;ambiguous|having more than one meaning;diligent|hardworking and careful;frugal|careful about spending money;reluctant|unwilling to do something;abundant|existing in large quantity;candid|open and honest;eloquent|fluent and persuasive in speaking;fragile|easily broken;gratitude|the feeling of being thankful;humble|not proud of oneself;inevitable|certain to happen;jovial|cheerful and friendly;keen|eager and enthusiastic;lethargic|lacking energy;meticulous|very careful about details;nostalgia|a longing for the past;obsolete|no longer in use;optimistic|hopeful about the future;persevere|to continue despite difficulty;quarrel|an angry argument;resilient|able to recover quickly;tranquil|calm and peaceful;unanimous|agreed by everyone;wary|cautious about possible danger;zealous|full of eager enthusiasm;adversity|a time of hardship;amateur|a person who does something for pleasure, not pay;anonymous|having no name given;barren|unable to produce crops;bewildered|completely confused;contemplate|to think deeply about something;courteous|polite and respectful;deceive|to make someone believe something false;exaggerate|to describe something as greater than it is;gloomy|dark and depressing;hostile|unfriendly and aggressive;immense|extremely large;integrity|the quality of being honest and fair;naive|lacking experience or judgement;pragmatic|dealing with things sensibly and realistically;rebel|a person who resists authority;sceptical|doubtful about whether something is true;trivial|of little importance;vivid|bright and clear;vulnerable|easily hurt or attacked;witty|clever and amusing in speech;abandon|to leave completely;allocate|to give out for a purpose;compassion|sympathy for the suffering of others;endure|to suffer patiently;fluctuate|to change often;hinder|to make something difficult;indifferent|having no interest;mediocre|of only average quality;prudent|acting with care and thought";
+const IDI="a piece of cake|something very easy;break the ice|start a conversation in a friendly way;hit the nail on the head|say exactly the right thing;once in a blue moon|very rarely;spill the beans|reveal a secret;under the weather|feeling slightly ill;cost an arm and a leg|be very expensive;burn the midnight oil|work late into the night;bite the bullet|face a painful situation bravely;beat around the bush|avoid the main point;the ball is in your court|it is your turn to decide;cry over spilt milk|feel sorry about something that cannot be changed;kill two birds with one stone|achieve two aims with one action;a blessing in disguise|something good that seemed bad at first;barking up the wrong tree|pursuing a mistaken course;call it a day|stop working for now;cut corners|do something badly to save time or money;get cold feet|become too nervous to go ahead;go the extra mile|make more effort than expected;in hot water|in trouble;jump the gun|act too soon;pull someone’s leg|joke with someone;raining cats and dogs|raining very heavily;see eye to eye|agree completely;the last straw|the final problem that makes things unbearable;throw in the towel|give up;turn a blind eye|ignore something on purpose;when pigs fly|something that will never happen;wild goose chase|a useless search;add fuel to the fire|make a bad situation worse;back to square one|start again from the beginning;better late than never|it is better to do something than not at all;speak of the devil|the person we mentioned has just appeared;the elephant in the room|an obvious problem nobody discusses;sit on the fence|refuse to take sides;at the drop of a hat|immediately without hesitation;hold your horses|wait and be patient;out of the blue|suddenly and unexpectedly;a drop in the ocean|a very small part of what is needed";
+const ONE="a person who loves books|Bibliophile;a person who writes poems|Poet;one who does not believe in God|Atheist;a person who walks in sleep|Somnambulist;the study of birds|Ornithology;the study of stars|Astronomy;a doctor who treats children|Paediatrician;a place where birds are kept|Aviary;fear of heights|Acrophobia;a person who eats only vegetables|Vegetarian;government by the people|Democracy;a speech delivered without preparation|Extempore;one who knows everything|Omniscient;a book of words and their meanings|Dictionary;a person who collects stamps|Philatelist;the killing of a king|Regicide;a person who speaks two languages|Bilingual;that which cannot be read|Illegible;a place where coins are made|Mint;a person new to a task|Novice;a list of things to be done|Agenda;a medicine that prevents disease|Vaccine;a place where plays are performed|Theatre;a collection of poems|Anthology;the life story of a person written by that person|Autobiography;a person who cannot read or write|Illiterate;a doctor who treats eyes|Ophthalmologist;one who is present everywhere|Omnipresent;a person who loves mankind|Philanthropist;fear of water|Hydrophobia;the life story of a person written by another|Biography;a person who fixes water pipes|Plumber;the study of animals|Zoology;the study of plants|Botany;the study of rocks|Geology;a person who designs buildings|Architect;a person who repairs shoes|Cobbler";
+const PLU="child|children;man|men;woman|women;foot|feet;tooth|teeth;mouse|mice;goose|geese;ox|oxen;person|people;leaf|leaves;knife|knives;wife|wives;life|lives;wolf|wolves;half|halves;shelf|shelves;thief|thieves;loaf|loaves;potato|potatoes;tomato|tomatoes;hero|heroes;echo|echoes;city|cities;baby|babies;country|countries;story|stories;fly|flies;lady|ladies;bus|buses;box|boxes;church|churches;dish|dishes;glass|glasses;class|classes;fox|foxes;cactus|cacti;fungus|fungi;crisis|crises;analysis|analyses;phenomenon|phenomena;criterion|criteria;datum|data;bacterium|bacteria;radius|radii;nucleus|nuclei";
+const COL="lions|pride;wolves|pack;cattle|herd;fish|shoal;birds|flock;bees|swarm;crows|murder;geese|gaggle;owls|parliament;players|team;singers|choir;soldiers|army;ships|fleet;stars|constellation;flowers|bouquet;grapes|bunch;musicians|orchestra;actors|cast;puppies|litter;judges|bench;sailors|crew;stairs|flight;cards|deck;trees|forest;pearls|string";
+const YNG="dog|puppy;cat|kitten;cow|calf;horse|foal;sheep|lamb;goat|kid;duck|duckling;frog|tadpole;hen|chick;deer|fawn;bear|cub;swan|cygnet;kangaroo|joey;eagle|eaglet;pig|piglet;butterfly|caterpillar";
+const SND="dog|barks;cat|meows;cow|moos;lion|roars;horse|neighs;donkey|brays;frog|croaks;snake|hisses;elephant|trumpets;bee|buzzes;sheep|bleats;crow|caws;owl|hoots;pig|grunts;duck|quacks;hen|clucks";
+const SPL="necessary,separate,definitely,receive,believe,occasion,accommodate,embarrass,environment,government,language,library,February,beautiful,calendar,privilege,restaurant,schedule,tomorrow,vacuum,weird,knowledge,guarantee,address,achieve,argument,committee,conscience,curiosity,disappear,discipline,exaggerate,excellent,existence,familiar,foreign,grammar,guidance,harass,immediately,independent,intelligence,interrupt,jewellery,judgement,laboratory,maintenance,mischievous,neighbour,noticeable,parallel,pronunciation,queue,rhythm,sincerely,successful,surprise,temperature,thorough,tragedy,unnecessary,until,usually,whether,accidentally,apparently,bureaucracy,colleague,commitment,convenient,courageous,deceive,desperate,dilemma,efficient,enthusiasm,essential,fascinate,fulfil,gauge,happiness,hierarchy,humorous,hypocrisy,ignorance,imagination,incredible,individual,innocent,irrelevant,leisure,lightning,medicine,millennium,miniature,moreover,mysterious,nuisance,obedience,occurrence,opportunity,particular,peculiar,performance,permanent,persuade,physical,possession,practical,prejudice,prescription,profession,psychology,questionnaire,reference,relevant,reliable,repetition,responsibility,secretary,sentence,similar,strength,technique,tendency,twelfth,unique,vegetable,vehicle,village,visible,Wednesday,withhold";
+const PFX="happy|unhappy;possible|impossible;polite|impolite;legal|illegal;regular|irregular;responsible|irresponsible;mature|immature;patient|impatient;honest|dishonest;agree|disagree;appear|disappear;obey|disobey;like|dislike;connect|disconnect;able|unable;kind|unkind;fair|unfair;tidy|untidy;lock|unlock;do|undo;visible|invisible;correct|incorrect;complete|incomplete;direct|indirect;active|inactive;perfect|imperfect;logical|illogical;literate|illiterate;legible|illegible;mortal|immortal;moral|immoral;balance|imbalance;movable|immovable;practical|impractical;similar|dissimilar;satisfied|dissatisfied;trust|distrust;respect|disrespect;proper|improper;fiction|nonfiction;sure|unsure;lucky|unlucky;healthy|unhealthy;aware|unaware;fortunate|unfortunate;known|unknown;necessary|unnecessary;employed|unemployed";
+const HOM="knight|night;write|right;sea|see;sun|son;flour|flower;meet|meat;pair|pear;hear|here;bear|bare;brake|break;weak|week;wait|weight;tale|tail;plane|plain;steal|steel;sail|sale;hole|whole;peace|piece;mail|male;beach|beech;been|bean;dear|deer;fair|fare;hair|hare;heal|heel;hour|our;knew|new;knot|not;made|maid;role|roll;stair|stare;toe|tow;waist|waste;wood|would";
+function typos(w){const c=[];for(let i=0;i<w.length-1;i++){const s=w.slice(0,i)+w[i+1]+w[i]+w.slice(i+2);if(s!==w&&!c.includes(s))c.push(s)}
+ const o=[0,1,2].map(j=>c[Math.floor(j*c.length/3)]).filter(Boolean);return[...new Set(o)]}
+function buildEN(){const L=[];
+ bi(L,"Synonyms",SYN,x=>`Choose the synonym of “${x}”.`,y=>`Choose the synonym of “${y}”.`,(x,y)=>`“${x}” and “${y}” have similar meanings.`);
+ bi(L,"Antonyms",ANT,x=>`Choose the antonym of “${x}”.`,y=>`Choose the antonym of “${y}”.`,(x,y)=>`“${x}” and “${y}” are opposites.`);
+ bi(L,"Word meanings",MEA,x=>`What does “${x}” mean?`,y=>`Which word means “${y}”?`,(x,y)=>`“${x}” means ${y}.`);
+ bi(L,"Idioms",IDI,x=>`What does the idiom “${x}” mean?`,y=>`Which idiom means “${y}”?`,(x,y)=>`“${x}” means ${y}.`);
+ bi(L,"One-word substitutes",ONE,x=>`One word for: ${x}`,y=>`Which description fits the word “${y}”?`,(x,y)=>`${y} means ${x}.`);
+ bi(L,"Plurals",PLU,x=>`What is the plural of “${x}”?`,y=>`What is the singular of “${y}”?`,(x,y)=>`The plural of ${x} is ${y}.`);
+ bi(L,"Collective nouns",COL,x=>`What is a group of ${x} called?`,y=>`“${y}” is a collective noun for which of these?`,(x,y)=>`A group of ${x} is a ${y}.`);
+ bi(L,"Animals",YNG,x=>`What is a baby ${x} called?`,y=>`The young one called “${y}” belongs to which animal?`,(x,y)=>`The young one of a ${x} is a ${y}.`);
+ bi(L,"Animals",SND,x=>`Which verb describes the sound a ${x} makes?`,y=>`Which animal ${y}?`,(x,y)=>`A ${x} ${y}.`);
+ bi(L,"Prefixes",PFX,x=>`Which word is the opposite of “${x}”, made by adding a prefix?`,null,(x,y)=>`“${y}” is formed from “${x}”.`);
+ bi(L,"Homophones",HOM,x=>`Which word sounds the same as “${x}”?`,y=>`Which word sounds the same as “${y}”?`,(x,y)=>`“${x}” and “${y}” sound alike but differ in meaning.`);
+ SPL.split(",").forEach(w=>mk(L,"Spelling","Which spelling is correct?",w,typos(w),`The correct spelling is “${w}”.`));
+ return L}
+
+/* ---------- NUMBERS AND FACTS ---------- */
+const NUMQ="How many UN member states are in Asia?|47|Asia has 47 UN member states under the UN geoscheme. Some sources say 48 or 49 because they also count places such as Taiwan and Palestine.;How many countries are in Africa?|54|Africa has 54 UN member states.;How many countries are in South America?|12|South America has 12 independent countries.;How many member states does the United Nations have?|193|The UN has 193 member states.|195,196,190;How many states does India have?|28|India has 28 states and 8 union territories.;How many union territories does India have?|8|India has 8 union territories.;How many districts does Tamil Nadu have?|38|Tamil Nadu has 38 districts.;How many Lok Sabha seats does Tamil Nadu have?|39|Tamil Nadu sends 39 members to the Lok Sabha.;How many seats are in the Tamil Nadu Legislative Assembly?|234|The Assembly has 234 constituencies.|224,230,243;How many Rajya Sabha seats does Tamil Nadu have?|18|Tamil Nadu has 18 Rajya Sabha seats.;How many seats are there in the Lok Sabha?|543|The Lok Sabha has 543 elected seats.|542,545,552;What is the maximum strength of the Rajya Sabha?|250|The maximum is 250 (238 elected and 12 nominated).|240,245,260;How many schedules does the Indian Constitution have?|12|The Constitution has 12 schedules.;How many fundamental rights does the Indian Constitution guarantee?|6|There are six fundamental rights.;How many languages are listed in the Eighth Schedule?|22|The Eighth Schedule lists 22 languages.;How many spokes does the Ashoka Chakra have?|24|The Ashoka Chakra has 24 spokes.;How many continents are there?|7|There are 7 continents.;How many oceans are there on Earth?|5|There are 5 oceans.;How many planets are in the solar system?|8|There are 8 planets.;How many bones are in an adult human body?|206|An adult has 206 bones.|205,208,210;How many teeth does an adult normally have?|32|An adult normally has 32 teeth.;How many chambers does the human heart have?|4|The heart has 4 chambers.;How many colours are in a rainbow?|7|A rainbow has 7 colours.;How many days are in a leap year?|366|A leap year has 366 days.|365,364,367;How many letters are in the English alphabet?|26|There are 26 letters.;How many vowels are in the English alphabet?|5|The vowels are A, E, I, O and U.;How many rings are in the Olympic symbol?|5|The symbol has 5 rings.;How many squares are on a chess board?|64|A chess board has 64 squares.;How many players of a cricket team play on the field?|11|Each cricket team fields 11 players.;How many players of a kabaddi team are on the mat?|7|Each kabaddi team has 7 players on the mat.;How many players of a volleyball team are on court?|6|A volleyball team has 6 players on court.;How many players of a basketball team are on court?|5|A basketball team has 5 players on court.;How many vowels (uyir ezhuthukkal) are in the Tamil alphabet?|12|Tamil has 12 vowels.;How many consonants (mei ezhuthukkal) are in the Tamil alphabet?|18|Tamil has 18 consonants.;How many couplets (kurals) are in the Thirukkural?|1330|It has 133 chapters of 10 couplets each.|1300,1320,1500;How many sides does a hexagon have?|6|A hexagon has 6 sides.;How many degrees are in a right angle?|90|A right angle is 90 degrees.|45,60,180;How many seconds are in one hour?|3600|60 times 60 is 3600.|360,6000,3000;How many Vedas are there?|4|The four Vedas are Rig, Yajur, Sama and Atharva.;How many Pandava brothers are there in the Mahabharata?|5|There are five Pandavas.;How many strings does a standard guitar have?|6|A standard guitar has 6 strings.;How many keys does a standard piano have?|88|A standard piano has 88 keys.|76,84,92;How many states does the USA have?|50|The USA has 50 states.;How many months of the year have 31 days?|7|January, March, May, July, August, October and December.";
+const MTH="January|31;February|28;March|31;April|30;May|31;June|30;July|31;August|31;September|30;October|31;November|30;December|31";
+const CON="Japan|Asia;India|Asia;China|Asia;Nepal|Asia;Thailand|Asia;Vietnam|Asia;Indonesia|Asia;Iran|Asia;Mongolia|Asia;Bhutan|Asia;Pakistan|Asia;Sri Lanka|Asia;Saudi Arabia|Asia;South Korea|Asia;Bangladesh|Asia;Philippines|Asia;Malaysia|Asia;Kazakhstan|Asia;Afghanistan|Asia;Myanmar|Asia;Kenya|Africa;Nigeria|Africa;Ghana|Africa;Ethiopia|Africa;Morocco|Africa;Tanzania|Africa;Uganda|Africa;South Africa|Africa;Algeria|Africa;Senegal|Africa;Zimbabwe|Africa;Madagascar|Africa;Angola|Africa;Sudan|Africa;France|Europe;Germany|Europe;Spain|Europe;Poland|Europe;Greece|Europe;Norway|Europe;Austria|Europe;Ireland|Europe;Italy|Europe;Portugal|Europe;Sweden|Europe;Finland|Europe;Hungary|Europe;Switzerland|Europe;Netherlands|Europe;Canada|North America;Mexico|North America;United States|North America;Cuba|North America;Jamaica|North America;Brazil|South America;Argentina|South America;Chile|South America;Peru|South America;Colombia|South America;Venezuela|South America;Uruguay|South America;Ecuador|South America;Australia|Oceania;New Zealand|Oceania;Fiji|Oceania;Papua New Guinea|Oceania";
+const roman=n=>{let r="";[[50,"L"],[40,"XL"],[10,"X"],[9,"IX"],[5,"V"],[4,"IV"],[1,"I"]].forEach(([v,s])=>{while(n>=v){r+=s;n-=v}});return r};
+function buildNF(){const L=[];
+ pr(NUMQ).forEach(([t,n,e,d])=>{const v=+n,st=Math.max(1,Math.round(v*.12));
+  const p=d?d.split(","):[v-st,v+st,v+2*st,v-2*st,v+3*st,v*2].filter(x=>x>0&&x!==v).map(String);mk(L,"How many…",t,n,p,e)});
+ for(let n=1;n<=60;n++){const r=roman(n),near=[];for(let k=-4;k<=4;k++)if(k&&n+k>0)near.push(n+k);
+  mk(L,"Roman numerals",`What is the Roman numeral for ${n}?`,r,near.map(roman),`${n} is written ${r}.`);
+  mk(L,"Roman numerals",`What number does ${r} stand for?`,String(n),near.map(String),`${r} stands for ${n}.`)}
+ pr(MTH).forEach(([m,d])=>mk(L,"Months",`How many days does ${m} have in a non-leap year?`,d,["28","29","30","31"],`${m} has ${d} days. February has 29 in a leap year.`));
+ const r=pr(CON),conts=[...new Set(r.map(x=>x[1]))];
+ r.forEach(([c,k])=>{mk(L,"Countries by continent",`Which continent is ${c} in?`,k,conts,`${c} is in ${k}.`);
+  mk(L,"Countries by continent",`Which of these countries is in ${k}?`,c,r.filter(z=>z[1]!==k).map(z=>z[0]),`${c} is in ${k}.`)});
+ return L}
+
+/* ---------- NAME-THEM-ALL TESTS ---------- */
+const TESTS=[["asia","Countries of Asia","🌏","Afghanistan;Armenia;Azerbaijan;Bahrain;Bangladesh;Bhutan;Brunei;Cambodia;China;Cyprus;Georgia;India;Indonesia;Iran;Iraq;Israel;Japan;Jordan;Kazakhstan;Kuwait;Kyrgyzstan/Kyrgyz Republic;Laos;Lebanon;Malaysia;Maldives;Mongolia;Myanmar/Burma;Nepal;North Korea;Oman;Pakistan;Philippines;Qatar;Saudi Arabia;Singapore;South Korea;Sri Lanka;Syria;Tajikistan;Thailand;Timor-Leste/East Timor;Turkey/Turkiye;Turkmenistan;United Arab Emirates/UAE/Emirates;Uzbekistan;Vietnam/Viet Nam;Yemen","Palestine;Taiwan"],
+["states","States of India","🇮🇳","Andhra Pradesh;Arunachal Pradesh;Assam;Bihar;Chhattisgarh;Goa;Gujarat;Haryana;Himachal Pradesh;Jharkhand;Karnataka;Kerala;Madhya Pradesh;Maharashtra;Manipur;Meghalaya;Mizoram;Nagaland;Odisha/Orissa;Punjab;Rajasthan;Sikkim;Tamil Nadu;Telangana;Tripura;Uttar Pradesh;Uttarakhand;West Bengal"],
+["tn","Districts of Tamil Nadu","🏛️","Ariyalur;Chengalpattu/Chengalpet;Chennai;Coimbatore;Cuddalore;Dharmapuri;Dindigul;Erode;Kallakurichi;Kancheepuram/Kanchipuram;Kanyakumari/Kanniyakumari;Karur;Krishnagiri;Madurai;Mayiladuthurai;Nagapattinam;Namakkal;Nilgiris/Nilgiri;Perambalur;Pudukkottai/Pudukkotai;Ramanathapuram/Ramnad;Ranipet;Salem;Sivaganga;Tenkasi;Thanjavur/Tanjore;Theni;Thoothukudi/Tuticorin;Tiruchirappalli/Trichy/Tiruchirapalli;Tirunelveli/Nellai;Tirupathur/Tirupattur;Tiruppur/Tirupur;Tiruvallur/Thiruvallur;Tiruvannamalai/Thiruvannamalai;Tiruvarur/Thiruvarur;Vellore;Viluppuram/Villupuram;Virudhunagar"],
+["ut","Union Territories of India","🗺️","Andaman and Nicobar Islands/Andaman;Chandigarh;Dadra and Nagar Haveli and Daman and Diu/Daman and Diu/Dadra and Nagar Haveli;Delhi/NCT of Delhi/New Delhi;Jammu and Kashmir;Ladakh;Lakshadweep;Puducherry/Pondicherry"],
+["sa","Countries of South America","🌎","Argentina;Bolivia;Brazil;Chile;Colombia;Ecuador;Guyana;Paraguay;Peru;Suriname;Uruguay;Venezuela"],
+["planets","Planets of the Solar System","🪐","Mercury;Venus;Earth;Mars;Jupiter;Saturn;Uranus;Neptune"],
+["cont","Continents of the World","🗺️","Asia;Africa;Europe;North America;South America;Australia/Oceania;Antarctica"]
+].map(([id,name,ico,s,ex])=>({id,name,ico,list:s.split(";").map(x=>x.split("/")),extra:(ex||"").split(";").filter(Boolean)}));
+
+/* ---------- FUN ZONE ---------- */
+const ANI="India|Bengal tiger;China|Giant panda;Australia|Red kangaroo;Canada|Beaver;Bangladesh|Royal Bengal tiger;Nepal|Cow;Sri Lanka|Grizzled giant squirrel;Pakistan|Markhor;Thailand|Elephant;Indonesia|Komodo dragon;Malaysia|Malayan tiger;Mexico|Golden eagle;France|Gallic rooster;Netherlands|Lion;Zimbabwe|Sable antelope;South Africa|Springbok;Tanzania|Giraffe;Philippines|Carabao;Bhutan|Takin;Mongolia|Mongolian horse;Afghanistan|Snow leopard;Myanmar|Asian elephant;Peru|Vicuña;Italy|Italian wolf;Iran|Asiatic cheetah;Russia|Brown bear;Vietnam|Water buffalo";
+const BIR="India|Indian peafowl;United States|Bald eagle;Japan|Green pheasant;New Zealand|Kiwi;Uganda|Grey crowned crane;Australia|Emu;Sri Lanka|Sri Lanka junglefowl;Nepal|Himalayan monal;Pakistan|Chukar;Bangladesh|Oriental magpie-robin;Argentina|Rufous hornero;Jamaica|Red-billed streamertail;Cuba|Cuban trogon;Philippines|Philippine eagle;Colombia|Andean condor;Egypt|Steppe eagle;Bhutan|Raven;Malaysia|Rhinoceros hornbill;Zambia|African fish eagle;Indonesia|Javan hawk-eagle";
+const FLO="India|Lotus;Japan|Cherry blossom;England|Rose;Netherlands|Tulip;Sri Lanka|Blue water lily;Bangladesh|Water lily;Thailand|Golden shower;Malaysia|Hibiscus;Indonesia|Jasmine;Philippines|Sampaguita;Nepal|Rhododendron;Egypt|Lotus;France|Iris;Germany|Cornflower;Switzerland|Edelweiss;Mexico|Dahlia;Peru|Cantuta;South Korea|Rose of Sharon;Turkey|Tulip;Australia|Golden wattle;Ireland|Shamrock;United States|Rose;Bhutan|Blue poppy;Singapore|Vanda Miss Joaquim;Cuba|White ginger lily";
+function buildFN(){const L=[];[["National animals","animal",ANI],["National birds","bird",BIR],["National flowers","flower",FLO]].forEach(([k,w,raw])=>{const r=pr(raw),it=r.map(x=>x[1]),cs=r.map(x=>x[0]);
+ r.forEach(([c,a])=>{const e=`The national ${w} of ${c} is the ${a}.`,o=it.filter(x=>x!==a);mk(L,k,`What is the national ${w} of ${c}?`,a,it,e);
+  if(it.filter(x=>x===a).length===1)mk(L,k,`The ${a} is the national ${w} of which country?`,c,cs,e);
+  mk(L,"True or False",`True or false: the national ${w} of ${c} is the ${a}.`,"True",["False"],e);
+  mk(L,"True or False",`True or false: the national ${w} of ${c} is the ${o[rnd(o.length)]}.`,"False",["True"],e)})});return L}
+
+/* ---------- APP ---------- */
+const C={gk:{name:"General Knowledge",tag:"India, Tamil Nadu, science, geography and world facts",ico:"🌍",build:buildGK},gr:{name:"Grammar",tag:"Tenses, verb forms, prepositions, articles and usage",ico:"✍️",build:buildGR},en:{name:"English Knowledge",tag:"Vocabulary, idioms, spelling, plurals and word use",ico:"📖",build:buildEN},nf:{name:"Numbers and Facts",tag:"How many…? Countries by continent, Roman numerals and quick facts",ico:"🔢",build:buildNF},fn:{name:"Fun Zone",tag:"National animals, birds and flowers, plus true or false rounds",ico:"🎉",build:buildFN}};
+for(const k in C){C[k].Q=C[k].build();C[k].seen=new Set()}
+let store={seen:{},best:{},bp:{},streak:{n:0,last:""},mis:{},st:{}},R=null,SET={sub:"All",len:10};
+const cur=()=>C[R.kk?R.kk[R.i]:R.k];
+try{const s=JSON.parse(localStorage.getItem("ph1")||"null");if(s){store=Object.assign(store,s);for(const k in C)C[k].seen=new Set(((store.seen||{})[k]||[]).filter(i=>i<C[k].Q.length))}}catch(e){}
+const save=()=>{try{store.seen={};for(const k in C)store.seen[k]=[...C[k].seen];localStorage.setItem("ph1",JSON.stringify(store))}catch(e){}};
+let VIEW="home";const HV={home:"home",setup:"topic",quiz:"play",result:"done",recall:"test",map:"map"};
+const view=id=>{["home","setup","quiz","result","recall","map"].forEach(s=>$(s).classList.toggle("hidden",s!==id));if(VIEW==="recall"&&id!=="recall"&&T)clearInterval(T.timer);VIEW=id;scrollTo(0,0);if(id==="map"&&MAP.inited){mapSize();mdraw();if(MAP.state==="intro")spin()}};
+const show=id=>{const from=VIEW;view(id);if(id==="home")return;const h="#"+HV[id];if(location.hash===h)return;try{if(from==="home")location.hash=h;else location.replace(h)}catch(e){}};
+const day=()=>new Date().toISOString().slice(0,10);
+
+const acc=k=>{const s=store.st[k];return s&&s[0]?Math.round(s[1]/s[0]*100)+"% accuracy":"No answers yet"};
+const nMis=()=>Object.keys(C).reduce((n,k)=>n+(store.mis[k]||[]).length,0);
+const mcard=()=>nMis()?`<button class="glass cat" type="button" data-k="mis"><span class="ico">🎯</span><span><h3>Practice my mistakes</h3><p>Retry the ${nMis()} question${nMis()>1?"s":""} you got wrong. A question leaves this list when you answer it correctly.</p></span></button>`:"";
+function setup(k){const c=C[k],cnt={};SET.k=k;SET.sub="All";c.Q.forEach(q=>cnt[q.k]=(cnt[q.k]||0)+1);
+ $("stitle").textContent=c.name;$("sinfo").textContent=`${c.Q.length.toLocaleString()} questions across ${Object.keys(cnt).length} subtopics.`;
+ const draw=()=>{$("chips").innerHTML=["All",...Object.keys(cnt)].map(s=>`<button type="button" class="chip2${s===SET.sub?" on":""}" data-s="${s}">${s}${s==="All"?"":" ("+cnt[s]+")"}</button>`).join("");
+  $("lens").innerHTML=[10,20,30].map(n=>`<button type="button" class="chip2${n===SET.len?" on":""}" data-n="${n}">${n} questions</button>`).join("");
+  $("chips").querySelectorAll("button").forEach(b=>b.onclick=()=>{SET.sub=b.dataset.s;draw()});
+  $("lens").querySelectorAll("button").forEach(b=>b.onclick=()=>{SET.len=+b.dataset.n;draw()})};
+ draw();show("setup")}
+function startMis(){const it=[];for(const k in C)(store.mis[k]||[]).forEach(id=>{if(id<C[k].Q.length)it.push([k,id])});const p=shuf(it).slice(0,10);
+ if(!p.length){home();return}R={k:"mis",kk:p.map(x=>x[0]),ids:p.map(x=>x[1]),i:0,score:0,wrong:[],lock:false};R.n=R.ids.length;ask();show("quiz")}
+function home(){const st=store.streak;$("streak").textContent=st.n?`🔥 ${st.n}-day streak`:"Start your streak";
+ $("cats").innerHTML=Object.keys(C).map(k=>{const c=C[k],n=c.Q.length,s=c.seen.size,b=(store.bp||{})[k];
+  return `<button class="glass cat" type="button" data-k="${k}"><span class="ico">${c.ico}</span><span><h3>${c.name}</h3><p>${c.tag}</p><div class="meter"><i style="width:${s/n*100}%"></i></div><div class="stats"><span>${n.toLocaleString()} questions · ${s.toLocaleString()} seen</span><span>${b!=null?"Best "+b+"% · ":""}${acc(k)}</span></div></span></button>`}).join("")+mcard();
+ document.querySelectorAll("#cats .cat").forEach(b=>b.onclick=()=>b.dataset.k==="mis"?startMis():setup(b.dataset.k));tiles();mbest();dailyUpd();show("home")}
+
+function pick(k,sub,len){const c=C[k],g={};c.Q.forEach((q,i)=>{if(sub==="All"||q.k===sub)(g[q.k]=g[q.k]||[]).push(i)});const keys=Object.keys(g),out=[],txt=new Set();
+ for(let guard=0;out.length<len&&guard<800;guard++){
+  const ok=i=>!c.seen.has(i)&&!out.includes(i)&&!txt.has(c.Q[i].t);
+  const ks=shuf(keys).filter(x=>g[x].some(ok));
+  if(!ks.length){keys.forEach(x=>g[x].forEach(i=>c.seen.delete(i)));continue}
+  const pool=g[ks[0]].filter(ok),i=pool[rnd(pool.length)];out.push(i);txt.add(c.Q[i].t)}
+ return out}
+
+function start(k,sub,len){sub=sub||"All";len=len||10;R={k,sub,len,ids:pick(k,sub,len),i:0,score:0,wrong:[],lock:false};R.n=R.ids.length;ask();show("quiz")}
+function ask(){const c=cur(),q=c.Q[R.ids[R.i]];R.lock=false;R.O=R.O||[];R.A=R.A||[];
+ if(!R.O[R.i])R.O[R.i]=shuf([q.a,...shuf([...new Set(q.p)].filter(x=>x!==q.a)).slice(0,3)]);R.opts=R.O[R.i];
+ $("count").textContent=`Question ${R.i+1} of ${R.n} · Score ${R.score}`;$("fill").style.width=R.i/R.n*100+"%";
+ $("tag").textContent=`${c.name} · ${q.k}`;$("qt").textContent=q.t;$("after").innerHTML="";
+ $("opts").innerHTML="";R.opts.forEach((o,j)=>{const b=document.createElement("button");b.type="button";b.className="opt";b.innerHTML=`<b>${"ABCD"[j]}</b><span></span>`;b.lastChild.textContent=o;b.onclick=()=>answer(j);$("opts").appendChild(b)});
+ if(R.A[R.i]!=null)reveal(R.A[R.i]);else nav(false)}
+function nav(done,ok){const q=cur().Q[R.ids[R.i]],last=R.i===R.n-1;
+ $("after").innerHTML=(done?`<div class="why"><b>${ok?"Correct.":"Not quite."}</b> ${q.e}</div>`:"")+`<div class="navrow"><button class="ghost" id="pv" type="button"${R.i?"":" disabled"}>← Previous</button>${done?`<button class="btn" id="nx" type="button">${last?"See result":"Next question"}</button>`:""}</div>`;
+ $("pv").onclick=()=>{R.i--;ask()};
+ if(done){$("nx").onclick=()=>{if(last)finish();else{R.i++;ask()}};$("nx").focus()}}
+function reveal(j){const q=cur().Q[R.ids[R.i]],bt=$("opts").children;R.lock=true;
+ [...bt].forEach((b,x)=>{b.disabled=true;if(R.opts[x]===q.a)b.classList.add("right")});
+ const ok=R.opts[j]===q.a;if(!ok)bt[j].classList.add("wrong");nav(true,ok)}
+function answer(j){if(R.lock||R.A[R.i]!=null)return;const c=cur(),kk=R.kk?R.kk[R.i]:R.k,id=R.ids[R.i],q=c.Q[id],ok=R.opts[j]===q.a,m=store.mis[kk]=store.mis[kk]||[],s=store.st[kk]=store.st[kk]||[0,0];R.A[R.i]=j;c.seen.add(id);s[0]++;
+ if(ok){R.score++;s[1]++;store.mis[kk]=m.filter(x=>x!==id)}else{R.wrong.push({t:q.t,a:q.a,y:R.opts[j]});if(!m.includes(id))m.push(id)}
+ $("count").textContent=`Question ${R.i+1} of ${R.n} · Score ${R.score}`;reveal(j);save()}
+function finish(){R.fin=true;const s=R.score,st=store.streak,t=day(),y=new Date(Date.now()-864e5).toISOString().slice(0,10);
+ if(st.last!==t){st.n=st.last===y?st.n+1:1;st.last=t}
+ const p2=Math.round(s/R.n*100);store.bp=store.bp||{};if(store.bp[R.k]==null||p2>store.bp[R.k])store.bp[R.k]=p2;save();
+ $("sc").textContent=`${s}/${R.n}`;$("arc").style.strokeDashoffset=452;requestAnimationFrame(()=>requestAnimationFrame(()=>$("arc").style.strokeDashoffset=452*(1-s/R.n)));
+ $("msg").textContent=s>=R.n*.9?"Outstanding. You know this topic very well.":s>=R.n*.6?"Good work. Check the review and play again.":"Keep going. The review below will help you improve.";
+ $("rev").innerHTML=R.wrong.map(w=>`<div class="glass"><b></b><br><span></span></div>`).join("");
+ [...$("rev").children].forEach((d,i)=>{d.firstChild.textContent=R.wrong[i].t;d.lastChild.textContent=`You chose: ${R.wrong[i].y}. Correct answer: ${R.wrong[i].a}.`});
+ $("chg").classList.toggle("hidden",!!R.kk);show("result")}
+$("again").onclick=()=>R.daily?startDaily():R.kk?startMis():start(R.k,R.sub,R.len);function gohome(){if(VIEW==="home"){home();return}if(location.hash!=="#home"){history.back();setTimeout(()=>{if(VIEW!=="home")home()},150)}else home()}
+$("home2").onclick=gohome;$("quit").onclick=gohome;$("sback").onclick=gohome;$("logo").onclick=gohome;$("chg").onclick=()=>R&&!R.kk?setup(R.k):gohome();
+addEventListener("hashchange",()=>{if(VIEW==="map"&&MAP.state!=="menu"&&location.hash==="#map"){mmenu();return}if(location.hash==="#mapplay"&&VIEW==="map")return;const w=Object.keys(HV).find(k=>"#"+HV[k]===location.hash)||"home";if(w===VIEW)return;
+ if(w==="home")home();else if(w==="setup"&&SET.k)view("setup");else if(w==="quiz"&&R&&!R.fin)view("quiz");else if(w==="result"&&R&&R.fin)view("result");else if(w==="recall"&&T)view("recall");else if(w==="map"&&MAP.opened)view("map");else home()});
+addEventListener("keydown",e=>{if(e.key==="Escape"&&(VIEW==="setup"||VIEW==="result"))gohome()});$("go").onclick=()=>start(SET.k,SET.sub,SET.len);
+addEventListener("keydown",e=>{if($("quiz").classList.contains("hidden")||e.ctrlKey||e.metaKey||e.altKey)return;const k=e.key.toLowerCase(),o=Math.max("1234".indexOf(k),"abcd".indexOf(k));
+ if(o>=0&&k.length===1&&$("opts").children[o]){answer(o);return}
+ if(k==="arrowright"&&$("nx"))$("nx").click();else if(k==="arrowleft"&&$("pv")&&!$("pv").disabled)$("pv").click()});
+let rc=0;$("reset").onclick=()=>{if(!rc){rc=1;$("reset").textContent="Tap again to erase all progress";setTimeout(()=>{rc=0;$("reset").textContent="Reset all progress"},4000)}else{rc=0;store={seen:{},best:{},bp:{},streak:{n:0,last:""},mis:{},st:{}};for(const k in C)C[k].seen=new Set();save();$("reset").textContent="Reset all progress";home()}};
+$("theme").onclick=()=>{const d=document.documentElement;d.setAttribute("data-theme",getComputedStyle(d).getPropertyValue("--mode").trim()==="dark"?"light":"dark");pc=null};
+
+/* name-them-all runtime */
+let T=null;
+const nz=s=>s.toLowerCase().replace(/^the\s+/,"").replace(/&/g,"and").replace(/[^a-z]/g,"");
+const lev1=(a,b)=>{if(a===b)return 0;if(Math.abs(a.length-b.length)>1)return 2;let i=0;while(i<a.length&&a[i]===b[i])i++;if(a.length===b.length)return a.slice(i+1)===b.slice(i+1)?1:2;if(a.length>b.length)[a,b]=[b,a];return a.slice(i)===b.slice(i+1)?1:2};
+const fmt=s=>Math.floor(s/60)+":"+String(s%60).padStart(2,"0");
+function tiles(){$("tests").innerHTML=TESTS.map(t=>`<button class="glass tile" type="button" data-t="${t.id}"><span class="ico sm">${t.ico}</span><span><b>${t.name}</b><br><span class="muted2">${t.list.length} to name · ${(store.rb||{})[t.id]!=null?"Best "+store.rb[t.id]+"%":"Not tried"}</span></span></button>`).join("");
+ document.querySelectorAll(".tile").forEach(b=>b.onclick=()=>ropen(b.dataset.t))}
+function ropen(id){const t=TESTS.find(x=>x.id===id),secs=Math.max(60,t.list.length*6);clearInterval(T&&T.timer);
+ T={t,secs,found:new Set(),order:[],map:new Map(),timer:null,done:false};
+ t.list.forEach((al,i)=>al.forEach(a=>T.map.set(nz(a),i)));T.extra=t.extra.map(nz);
+ $("rtitle").textContent=t.name;$("rtime").textContent="";
+ $("rinfo").textContent=`There are ${t.list.length} to find.${t.extra.length?" "+t.extra.join(" and ")+" are accepted but not counted.":""} Small spelling mistakes are forgiven.`;
+ $("rt1").textContent=`Start timed test (${fmt(secs)})`;
+ $("rintro").classList.remove("hidden");$("rplay").classList.add("hidden");$("rdone").classList.add("hidden");show("recall")}
+function rgo(timed){T.left=T.secs;$("rintro").classList.add("hidden");$("rplay").classList.remove("hidden");$("rmsg").textContent="";
+ $("rtime").textContent=timed?fmt(T.left):"Practice mode";
+ if(timed)T.timer=setInterval(()=>{T.left--;$("rtime").textContent=fmt(Math.max(0,T.left));if(T.left<=0)rfinish()},1000);
+ rdraw();$("rinput").value="";$("rinput").focus()}
+function rdraw(){const n=T.t.list.length;$("rcount").textContent=`${T.found.size} of ${n} found`;$("rfill").style.width=T.found.size/n*100+"%";
+ $("rfound").innerHTML=T.order.map(i=>`<span class="chip3">${T.t.list[i][0]}</span>`).join("")}
+function radd(){const inp=$("rinput"),raw=inp.value.trim();if(!raw||T.done)return;const v=nz(raw);let idx=T.map.has(v)?T.map.get(v):-1;
+ if(idx<0&&v.length>=6)for(const [k,i] of T.map)if(lev1(v,k)<2){idx=i;break}
+ const m=$("rmsg");
+ if(idx>=0){if(T.found.has(idx))m.textContent="Already added.";else{T.found.add(idx);T.order.push(idx);m.textContent="Correct."}}
+ else if(T.extra.includes(v))m.textContent="Accepted, but not counted in this list.";
+ else m.textContent="Not in this list. Check the spelling.";
+ inp.value="";inp.focus();rdraw();if(T.found.size===T.t.list.length)rfinish()}
+function rfinish(){if(!T||T.done)return;T.done=true;clearInterval(T.timer);const n=T.t.list.length,f=T.found.size,p=Math.round(f/n*100),st=store.streak,t=day(),y=new Date(Date.now()-864e5).toISOString().slice(0,10);
+ if(st.last!==t){st.n=st.last===y?st.n+1:1;st.last=t}
+ store.rb=store.rb||{};if(store.rb[T.t.id]==null||p>store.rb[T.t.id])store.rb[T.t.id]=p;save();
+ $("rscore").textContent=`${f}/${n}`;
+ $("rsum").textContent=f===n?"Perfect. You named every one.":`You named ${f} of ${n} (${p}%). Study the missed names below and try again.`;
+ $("rmwrap").classList.toggle("hidden",f===n);
+ $("rmiss").innerHTML=T.t.list.map((al,i)=>T.found.has(i)?"":`<span class="chip3 miss">${al[0]}</span>`).join("");
+ $("rplay").classList.add("hidden");$("rdone").classList.remove("hidden");$("rtime").textContent=""}
+$("rt1").onclick=()=>rgo(true);$("rt2").onclick=()=>rgo(false);$("radd").onclick=radd;$("rfin").onclick=rfinish;
+$("rinput").onkeydown=e=>{if(e.key==="Enter")radd()};
+$("ragain").onclick=()=>ropen(T.t.id);$("rback").onclick=gohome;
+
+/* ---------- WORLD MAP GAME ---------- */
+const WC="India:IND:A;Pakistan:PAK:A;Bangladesh:BGD:A;Nepal:NPL:A;Bhutan:BTN:A;Sri Lanka:LKA:A;China:CHN:A;Japan:JPN:A;South Korea:KOR:A;North Korea:PRK:A;Mongolia:MNG:A;Thailand:THA:A;Vietnam:VNM:A;Indonesia:IDN:A;Malaysia:MYS:A;Philippines:PHL:A;Myanmar:MMR:A;Cambodia:KHM:A;Laos:LAO:A;Afghanistan:AFG:A;Iran:IRN:A;Iraq:IRQ:A;Saudi Arabia:SAU:A;Turkey:TUR:A;Kazakhstan:KAZ:A;Uzbekistan:UZB:A;Turkmenistan:TKM:A;Kyrgyzstan:KGZ:A;Tajikistan:TJK:A;Yemen:YEM:A;Oman:OMN:A;Qatar:QAT:A;Kuwait:KWT:A;Jordan:JOR:A;Lebanon:LBN:A;Syria:SYR:A;United Arab Emirates:ARE:A;Azerbaijan:AZE:A;Georgia:GEO:A;Armenia:ARM:A;Egypt:EGY:F;Libya:LBY:F;Algeria:DZA:F;Morocco:MAR:F;Tunisia:TUN:F;Sudan:SDN:F;South Sudan:SSD:F;Ethiopia:ETH:F;Somalia:SOM:F;Kenya:KEN:F;Uganda:UGA:F;Tanzania:TZA:F;Nigeria:NGA:F;Ghana:GHA:F;Ivory Coast:CIV:F;Mali:MLI:F;Niger:NER:F;Chad:TCD:F;Cameroon:CMR:F;Democratic Republic of the Congo:COD:F;Angola:AGO:F;Zambia:ZMB:F;Zimbabwe:ZWE:F;Mozambique:MOZ:F;Madagascar:MDG:F;Namibia:NAM:F;Botswana:BWA:F;South Africa:ZAF:F;Senegal:SEN:F;Mauritania:MRT:F;Gabon:GAB:F;Central African Republic:CAF:F;Malawi:MWI:F;France:FRA:E;Germany:DEU:E;Italy:ITA:E;Spain:ESP:E;Portugal:PRT:E;United Kingdom:GBR:E;Ireland:IRL:E;Belgium:BEL:E;Netherlands:NLD:E;Switzerland:CHE:E;Austria:AUT:E;Poland:POL:E;Czech Republic:CZE:E;Hungary:HUN:E;Greece:GRC:E;Sweden:SWE:E;Norway:NOR:E;Finland:FIN:E;Denmark:DNK:E;Russia:RUS:E;Ukraine:UKR:E;Belarus:BLR:E;Romania:ROU:E;Bulgaria:BGR:E;Serbia:SRB:E;Croatia:HRV:E;Iceland:ISL:E;Lithuania:LTU:E;Latvia:LVA:E;Estonia:EST:E;Slovakia:SVK:E;United States:USA:N;Canada:CAN:N;Mexico:MEX:N;Cuba:CUB:N;Jamaica:JAM:N;Guatemala:GTM:N;Honduras:HND:N;Nicaragua:NIC:N;Costa Rica:CRI:N;Panama:PAN:N;Dominican Republic:DOM:N;Haiti:HTI:N;Brazil:BRA:S;Argentina:ARG:S;Chile:CHL:S;Peru:PER:S;Colombia:COL:S;Venezuela:VEN:S;Ecuador:ECU:S;Bolivia:BOL:S;Paraguay:PRY:S;Uruguay:URY:S;Guyana:GUY:S;Suriname:SUR:S;Australia:AUS:O;New Zealand:NZL:O;Papua New Guinea:PNG:O;Fiji:FJI:O";
+const WCL=WC.split(";").map(s=>{const[n,iso,cn]=s.split(":");return{n,iso,cn}}),WI={};WCL.forEach(c=>WI[c.iso]=c);
+const CENT={A:[85,32],F:[20,5],E:[15,52],N:[-100,40],S:[-60,-15],O:[140,-22],W:[20,15]},CN={A:"Asia",F:"Africa",E:"Europe",N:"North America",S:"South America",O:"Oceania"};
+const capOf=new Map(pr(CAP)),curOf=new Map(pr(CUR)),landOf={};pr(LAN).forEach(([l,c])=>(landOf[c]=landOf[c]||[]).push(l));
+const MAP={mode:"flat",pw:"all",n:10,st:"idle",opened:false,rot:[-78,-20],k:1.15,tx:0,ty:0,W:320,H:320,els:{},list:[],feats:[],state:"menu",region:"W",G:null,load:null,inited:false,ready:false,drag:false};
+const cl=(v,a,b)=>Math.max(a,Math.min(b,v));
+const loadJs=u=>new Promise((ok,no)=>{const s=document.createElement("script");s.src=u;s.onload=ok;s.onerror=()=>no(new Error("could not load "+u.split("/").slice(-1)[0]));document.head.appendChild(s)});
+const loadAny=us=>us.reduce((p,u)=>p.catch(()=>loadJs(u)),Promise.reject());
+function mapLibs(){return MAP.load||(MAP.load=loadAny(["https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js","https://cdn.jsdelivr.net/npm/d3@3.5.17/d3.min.js"]).then(()=>loadAny(["https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js","https://cdn.jsdelivr.net/npm/topojson@1.6.27/build/topojson.min.js"])).then(()=>loadAny(["https://cdnjs.cloudflare.com/ajax/libs/datamaps/0.5.9/datamaps.world.min.js","https://cdn.jsdelivr.net/npm/datamaps@0.5.9/dist/datamaps.all.min.js","https://cdn.jsdelivr.net/npm/datamaps@0.5.9/dist/datamaps.world.min.js"])).then(()=>{if(!window.Datamap||!Datamap.prototype.worldTopo)throw new Error("map data missing");const t=Datamap.prototype.worldTopo;MAP.feats=topojson.feature(t,t.objects.world).features.filter(f=>f.id!=="ATA")}).catch(e=>{MAP.load=null;throw e}))}
+const nameOf=id=>WI[id]?WI[id].n:(MAP.els[id]&&MAP.els[id]._f.properties&&MAP.els[id]._f.properties.name)||"another area";
+function mapInit(){if(MAP.inited)return;const svg=$("mg"),ns="http://www.w3.org/2000/svg",se=c=>{const e=document.createElementNS(ns,"path");e.setAttribute("class",c);svg.appendChild(e);return e};
+ MAP.sea=se("sea");MAP.grat=se("grat");MAP.gr=d3.geo.graticule()();
+ MAP.feats.forEach(f=>{const e=se("c");e.dataset.id=f.id;e._f=f;MAP.list.push([e,f]);if(!MAP.els[f.id])MAP.els[f.id]=e});
+ MAP.inited=true;mapBind()}
+function mapSize(){$("mapbox").classList.toggle("flat",MAP.mode==="flat");const s=$("mg");if(!s.clientWidth)return;MAP.W=s.clientWidth;MAP.H=s.clientHeight||320;s.setAttribute("viewBox","0 0 "+MAP.W+" "+MAP.H)}
+function mproj(){const s=Math.min(MAP.W,MAP.H);return MAP.mode==="globe"?d3.geo.orthographic().scale(s/2*.94*MAP.k).translate([MAP.W/2,MAP.H/2]).rotate(MAP.rot).clipAngle(90):d3.geo.equirectangular().scale(MAP.W/6.283*MAP.k).translate([MAP.W/2+MAP.tx,MAP.H/2+MAP.ty])}
+function mdraw(){if(!MAP.inited)return;const g=d3.geo.path().projection(mproj());MAP.sea.setAttribute("d",g({type:"Sphere"})||"");MAP.grat.setAttribute("d",g(MAP.gr)||"");MAP.list.forEach(([e,f])=>e.setAttribute("d",g(f)||""))}
+let qd=0;const redraw=()=>{if(!qd)qd=requestAnimationFrame(()=>{qd=0;mdraw()})};
+function flyTo(lo,la,k){const f={r:MAP.rot.slice(),k:MAP.k,tx:MAP.tx,ty:MAP.ty};let to;
+ if(MAP.mode==="globe"){const d=((-lo-f.r[0]+540)%360)-180;to={r:[f.r[0]+d,cl(-la,-80,80)],k,tx:0,ty:0}}
+ else{const p=d3.geo.equirectangular().scale(MAP.W/6.283*k).translate([0,0])([lo,la]);to={r:f.r,k,tx:-p[0],ty:-p[1]}}
+ const t0=performance.now(),st=t=>{const u=Math.min(1,(t-t0)/800),e=u<.5?2*u*u:1-Math.pow(-2*u+2,2)/2;MAP.rot=[f.r[0]+(to.r[0]-f.r[0])*e,f.r[1]+(to.r[1]-f.r[1])*e];MAP.k=f.k+(to.k-f.k)*e;MAP.tx=f.tx+(to.tx-f.tx)*e;MAP.ty=f.ty+(to.ty-f.ty)*e;mdraw();if(u<1)requestAnimationFrame(st)};requestAnimationFrame(st)}
+const zoom=m=>{MAP.k=cl(MAP.k*m,MAP.mode==="globe"?.8:1,16);redraw()};
+const home0=()=>MAP.mode==="globe"?flyTo(78,20,1):flyTo(10,15,1.15);
+function spin(){return;if(MAP.spinning)return;MAP.spinning=true;const f=()=>{if(VIEW!=="map"||MAP.state!=="intro"||MAP.drag||document.hidden||MAP.mode!=="globe"){MAP.spinning=false;return}MAP.rot[0]+=.18;mdraw();requestAnimationFrame(f)};requestAnimationFrame(f)}
+function mapBind(){const svg=$("mg"),Pt=new Map();let dr=null,pin=null;
+ svg.addEventListener("pointerdown",e=>{Pt.set(e.pointerId,[e.clientX,e.clientY]);MAP.drag=true;if(Pt.size===1)dr={moved:0,t:e.target};else if(Pt.size===2){const[a,b]=[...Pt.values()];pin={d:Math.hypot(a[0]-b[0],a[1]-b[1])||1,k:MAP.k};if(dr)dr.moved=99}});
+ addEventListener("pointermove",e=>{if(!Pt.has(e.pointerId))return;const o=Pt.get(e.pointerId);Pt.set(e.pointerId,[e.clientX,e.clientY]);
+  if(Pt.size===2&&pin){const[a,b]=[...Pt.values()];MAP.k=cl(pin.k*Math.hypot(a[0]-b[0],a[1]-b[1])/pin.d,MAP.mode==="globe"?.8:1,16);redraw();return}
+  if(dr&&Pt.size===1){const dx=e.clientX-o[0],dy=e.clientY-o[1];dr.moved+=Math.abs(dx)+Math.abs(dy);if(dr.moved>6){
+   if(MAP.mode==="globe"){const R=Math.min(MAP.W,MAP.H)/2*.94*MAP.k,s=57.3/R;MAP.rot=[MAP.rot[0]+dx*s,cl(MAP.rot[1]-dy*s,-90,90)]}else{MAP.tx+=dx;MAP.ty+=dy}redraw()}}});
+ const up=e=>{if(!Pt.has(e.pointerId))return;Pt.delete(e.pointerId);if(Pt.size===0){MAP.drag=false;if(dr&&dr.moved<=6&&e.type==="pointerup"){const id=dr.t&&dr.t.dataset&&dr.t.dataset.id;if(id)mapPick(id)}dr=null;if(MAP.state==="intro")spin()}if(Pt.size<2)pin=null};
+ addEventListener("pointerup",up);addEventListener("pointercancel",up);
+ svg.addEventListener("wheel",e=>{e.preventDefault();zoom(e.deltaY<0?1.2:1/1.2)},{passive:false})}
+const MG=[["find","🎯","Find it on the map","Tap the country on the map. Two tries, with a hint.",1],["see","👁️","Which one is glowing?","A country lights up. Pick the name from 4 choices.",1],["clue","🧩","Clue quiz","Multiple choice on capitals, currencies and landmarks.",0],["type","⌨️","Type the answer","Same clues, but you type. Small typos are forgiven.",0],["learn","👆","Tap and learn","Just for fun: tap any country to see its name and facts. No score, no pressure.",1],["explore","🔍","Search and explore","Search any country to see it on the map with facts.",1]];
+const AL={usa:"United States",us:"United States",america:"United States",uk:"United Kingdom",britain:"United Kingdom",england:"United Kingdom",uae:"United Arab Emirates",drc:"Democratic Republic of the Congo",congo:"Democratic Republic of the Congo",czechia:"Czech Republic",burma:"Myanmar",cotedivoire:"Ivory Coast",holland:"Netherlands"};
+const clearMarks=()=>Object.values(MAP.els).forEach(e=>e.classList.remove("ok","no","sel","rev"));
+const facts=c=>{const a=[],cap=capOf.get(c.n),cu=curOf.get(c.n),lm=landOf[c.n];a.push(c.n+" is in "+CN[c.cn]+".");if(cap)a.push("Capital: "+cap+".");if(cu)a.push("Currency: "+cu+".");if(lm)a.push("Landmark: "+lm.join(", ")+".");return a.join(" ")};
+const info=t=>$("minfo").textContent=t,mrec=(c,ok)=>{store.mc=store.mc||{};const m=store.mc[c.iso]=store.mc[c.iso]||{r:0,w:0};ok?m.r++:m.w++};
+const mst=x=>(store.mc||{})[x.iso],mastered=x=>{const m=mst(x);return !!m&&m.r>=2&&m.r>m.w},weak=x=>{const m=mst(x);return !!m&&m.w>0&&!mastered(x)};
+const MSUB={SA:["South Asia","IND PAK BGD NPL BTN LKA AFG",78,24,3.4,2.6],ME:["Middle East","SAU IRN IRQ TUR YEM OMN QAT KWT JOR LBN SYR ARE",45,29,3.4,2.6],SE:["Southeast Asia","THA VNM IDN MYS PHL MMR KHM LAO",108,8,3,2.4],EA:["East Asia","CHN JPN KOR PRK MNG",112,38,3,2.2],CS:["Central Asia and Caucasus","KAZ UZB TKM KGZ TJK AZE GEO ARM",65,42,3.2,2.4],NF:["North Africa","EGY LBY DZA MAR TUN SDN",15,27,3,2.2],WF:["West Africa","SEN MRT MLI NER NGA GHA CIV",-2,13,3.4,2.6],EF:["East Africa","ETH SOM KEN UGA TZA SSD",38,3,3.6,2.8],SF:["Southern Africa","ZMB ZWE MOZ MDG NAM BWA ZAF AGO MWI",26,-19,3.2,2.4],CF:["Central Africa","COD CMR GAB CAF TCD",18,3,3.6,2.8],WE:["Western Europe","FRA DEU ITA ESP PRT GBR IRL BEL NLD CHE AUT",4,47,4,3],EE:["Eastern Europe","POL CZE HUN SVK UKR BLR ROU BGR SRB HRV GRC RUS LTU LVA EST",28,50,3.2,2.4],NR:["Nordic","SWE NOR FIN DNK ISL",15,63,3.8,2.8],CA:["Central America and Caribbean","MEX CUB JAM GTM HND NIC CRI PAN DOM HTI",-87,17,3.4,2.6]};
+const rgn=()=>{const s=MSUB[MAP.region];return s?WCL.filter(x=>s[1].split(" ").includes(x.iso)):WCL.filter(x=>MAP.region==="W"||x.cn===MAP.region)};
+function mset(s){MAP.state=s;$("mmenu2").classList.toggle("hidden",s!=="menu");$("mgame").classList.toggle("hidden",s!=="game");$("mdone").classList.toggle("hidden",s!=="done");if(s!=="game")$("mscore").textContent=""}
+function mstatus(){const s=MAP.st;$("mstat").textContent=MAP.ready?"Map ready ✓":s==="fail"?"Map offline. Tap to retry":"Map loading…";$("mstat").disabled=MAP.ready||s==="loading"}
+function mprefetch(){if(MAP.ready)return Promise.resolve();MAP.st="loading";mstatus();return mapLibs().then(()=>{mapInit();MAP.ready=true;MAP.st="ready"}).catch(()=>{MAP.st="fail"}).then(mstatus)}
+function mrender(){const row=(id,arr,cur,att,rr)=>{$(id).innerHTML=arr.map(([k,n])=>`<button type="button" class="chip2${k===cur?" on":""}" data-k="${k}">${n}</button>`).join("");$(id).querySelectorAll("button").forEach(b=>b.onclick=()=>{MAP[att]=att==="n"?+b.dataset.k:b.dataset.k;rr()})};
+ const rr=()=>{row("mreg",[["W","World"],["A","Asia"],["F","Africa"],["E","Europe"],["N","North America"],["S","South America"],["O","Oceania"]],MAP.region,"region",rr);row("mreg2",Object.keys(MSUB).map(k=>[k,MSUB[k][0]]),MAP.region,"region",rr);row("mpool",[["all","All countries"],["weak","My weak spots"]],MAP.pw,"pw",rr);row("mlen",[[5,"5"],[10,"10"],[20,"20"]],MAP.n,"n",rr);
+  const P=rgn(),m=P.filter(mastered).length,w=P.filter(weak).length;$("mprog").textContent=`In this region: ${m} of ${P.length} countries mastered (2 or more right answers) · ${w} weak spot${w===1?"":"s"}.`};rr();
+ $("mgames").innerHTML=MG.map(g=>`<button class="glass tile" type="button" data-g="${g[0]}"><span class="ico sm">${g[1]}</span><span><b>${g[2]}</b><br><span class="muted2">${g[3]}${(store.mbg||{})[g[0]]!=null?" Best "+store.mbg[g[0]]+"%":""}</span></span></button>`).join("");
+ $("mgames").querySelectorAll(".tile").forEach(b=>b.onclick=()=>mstart(b.dataset.g));mstatus()}
+function mbest(){$("mapbest").textContent=store.mb!=null?"Best "+store.mb+"%":"Tap to play"}
+function openMap(){MAP.opened=true;show("map");mset("menu");$("mnote").style.display="none";mrender();mprefetch()}
+function focusRegion(){const s=MSUB[MAP.region];if(s)return flyTo(s[2],s[3],MAP.mode==="globe"?s[5]:s[4]);const c=CENT[MAP.region];flyTo(c[0],c[1],MAP.region==="W"?1:MAP.mode==="globe"?1.7:2.4)}
+function focusId(id){const e=MAP.els[id];if(!e)return;const c=d3.geo.centroid(e._f);flyTo(c[0],c[1],MAP.mode==="globe"?2.6:4)}
+const dist=(c,a,f)=>{const o=WCL.filter(x=>x.iso!==c.iso&&f(x)&&f(x)!==a),s=shuf(o.filter(x=>x.cn===c.cn)).concat(shuf(o.filter(x=>x.cn!==c.cn)));return[...new Set(s.map(f))].slice(0,3)};
+const clueQs=c=>{const o=[],cap=capOf.get(c.n),cu=curOf.get(c.n),lm=landOf[c.n];
+ if(cap){o.push({tag:"Capital clue",t:`Which country has the capital ${cap}?`,a:c.n,kind:"c"});o.push({tag:"Capital",t:`What is the capital of ${c.n}?`,a:cap,kind:"cap"})}
+ if(cu)o.push({tag:"Currency clue",t:`Which country uses the ${cu}?`,a:c.n,kind:"c"});if(lm)o.push({tag:"Landmark clue",t:`Which country is home to ${lm[0]}?`,a:c.n,kind:"c"});return o};
+function mkQ(g,c){if(g==="find")return{c,tag:"Find on the map",t:`Find ${c.n} on the map.`,a:c.n};
+ if(g==="see")return{c,tag:"Which country is glowing?",t:"Which country is glowing on the map?",a:c.n,p:dist(c,c.n,x=>x.n)};
+ const q=clueQs(c),z=q[rnd(q.length)];z.c=c;z.p=z.kind==="cap"?dist(c,z.a,x=>capOf.get(x.n)):dist(c,z.a,x=>x.n);return z}
+function mkList(g){let P=rgn();if(g==="find"||g==="see"){const ids=new Set(MAP.feats.map(f=>f.id));P=P.filter(x=>ids.has(x.iso))}
+ if(g==="clue"||g==="type")P=P.filter(x=>clueQs(x).length);if(MAP.pw==="weak")P=P.filter(weak);return shuf(P).slice(0,MAP.n)}
+const note=t=>{$("mnote").textContent=t;$("mnote").style.display=t?"block":"none"};
+async function mstart(g,list){const need=MG.find(x=>x[0]===g)[4];
+ if(need&&!MAP.ready){note("Loading the map…");await mprefetch();if(!MAP.ready){note("The map could not load. Check your internet connection, then tap “Map offline” to retry. The clue and type games work without the map.");return}}
+ const L=list||(g==="explore"||g==="learn"?[1]:mkList(g));if(!L.length){note(MAP.pw==="weak"?"No weak spots here yet. Play a few rounds first, or switch to All countries.":"No countries match this choice.");return}
+ note("");MAP.G={g,L:g==="explore"||g==="learn"?[]:L.map(c=>mkQ(g,c)),i:0,score:0,res:[]};mset("game");if(location.hash!=="#mapplay")try{location.hash="#mapplay"}catch(e){}
+ $("mapbox").classList.toggle("hidden",!need);$("mtg").textContent=MAP.mode==="globe"?"🗺️":"🌐";if(need){mapSize();clearMarks();mdraw();focusRegion()}
+ if(g==="learn"){MAP.G.seen=new Set();Object.values(MAP.els).forEach(e=>e.classList.remove("vis"))}
+ g==="explore"||g==="learn"?mexplore():mq()}
+function mq(){const G=MAP.G,q=G.L[G.i],g=G.g,mc=g==="see"||g==="clue";G.tries=0;G.hint=0;G.ans=0;clearMarks();
+ $("mtag").textContent=`${q.tag} · ${G.i+1} of ${G.L.length}`;$("mq").textContent=q.t;$("mfill").style.width=G.i/G.L.length*100+"%";$("mscore").textContent=G.score+" points";
+ $("mopts").classList.toggle("hidden",!mc);$("mtype").classList.toggle("hidden",g!=="type");$("msearch").classList.add("hidden");
+ $("mhint").classList.remove("hidden");$("mshow").classList.remove("hidden");$("mnext").classList.add("hidden");
+ if(mc)$("mopts").innerHTML=shuf([q.a,...q.p]).map((o,i)=>`<button type="button" class="opt" data-o="${o}"><b>${"ABCD"[i]}</b><span>${o}</span></button>`).join("");
+ if(g==="type"){$("minp").value="";$("minp").disabled=false;$("mok").disabled=false;if(!matchMedia("(pointer:coarse)").matches)$("minp").focus()}
+ if(g==="see"){MAP.els[q.c.iso]&&MAP.els[q.c.iso].classList.add("sel");focusId(q.c.iso)}else if(g==="find")focusRegion();
+ info(g==="find"?"Tap the country on the map. Drag to move, pinch or use + and − to zoom.":g==="see"?"Look at the glowing country, then choose its name.":g==="type"?"Type your answer. Capital and country names both work.":"Choose the best answer.")}
+function mdone(){const G=MAP.G;G.ans=1;$("mnext").textContent=G.i===G.L.length-1?"See result":"Next";$("mnext").classList.remove("hidden");$("mhint").classList.add("hidden");$("mshow").classList.add("hidden");$("mtype").classList.add("hidden");$("mscore").textContent=G.score+" points";$("mopts").querySelectorAll(".opt").forEach(b=>{b.disabled=true;if(b.dataset.o===G.L[G.i].a)b.classList.add("right")})}
+function mright(){const G=MAP.G,q=G.L[G.i],p=G.tries===0?(G.hint?7:10):(G.hint?3:5);G.score+=p;G.res.push({n:q.c.n,ok:G.tries===0,c:q.c});mrec(q.c,G.tries===0);save();const e=MAP.els[q.c.iso];e&&G.g!=="clue"&&G.g!=="type"&&e.classList.add("ok");info(`Correct! +${p} points. `+facts(q.c));mdone()}
+function mreveal(){const G=MAP.G,q=G.L[G.i];if(G.ans)return;const e=MAP.els[q.c.iso];e&&G.g!=="clue"&&G.g!=="type"&&(e.classList.remove("sel"),e.classList.add("rev"));if(MAP.ready&&(G.g==="find"||G.g==="see"))focusId(q.c.iso);G.res.push({n:q.c.n,ok:false,c:q.c});mrec(q.c,false);save();info("The answer is "+q.a+". "+facts(q.c));mdone()}
+function mwrong(label){const G=MAP.G;G.tries++;if(G.tries>=2||G.g==="see"||G.g==="clue")mreveal();else info(label+" Try once more, or tap Hint.")}
+function mpick(o,btn){const G=MAP.G,q=G.L[G.i];if(G.ans)return;if(o===q.a)mright();else{btn&&btn.classList.add("wrong");mwrong("")}}
+function mapPick(id){const nm=nameOf(id),G=MAP.G;
+ if(MAP.state==="game"&&G&&(G.g==="explore"||G.g==="learn")){mshow(WI[id]||{n:nm,iso:id,cn:null},1);return}
+ if(MAP.state!=="game"||!G||G.g!=="find"||G.ans)return;const q=G.L[G.i];
+ if(id===q.c.iso)mright();else{const e=MAP.els[id];if(e){e.classList.add("no");setTimeout(()=>e.classList.remove("no"),700)}mwrong(`That is ${nm}.`)}}
+function mhint(){const G=MAP.G;if(!G||G.ans||G.hint)return;const q=G.L[G.i];G.hint=1;
+ if(G.g==="find"){const ct=CENT[q.c.cn];flyTo(ct[0],ct[1],MAP.mode==="globe"?1.7:2.4);info("Hint: it is in "+CN[q.c.cn]+".")}
+ else if(G.g==="type")info(`Hint: it starts with “${q.a[0]}” and has ${q.a.length} characters.`);
+ else{const w=shuf([...$("mopts").children].filter(b=>b.dataset.o!==q.a)).slice(0,2);w.forEach(b=>{b.disabled=true;b.classList.add("dim")});info("Two wrong choices removed. Correct answers now score 7 points.")}}
+function mtypeok(){const G=MAP.G,q=G.L[G.i];if(G.ans)return;let v=nz($("minp").value);if(!v)return;const a=nz(q.a);
+ if(v===a||(q.kind==="c"&&AL[v]===q.a)||(a.length>=5&&lev1(v,a)<2))mright();else{if(G.tries===0){G.tries=1;info("Not quite. Try once more, or tap Hint.");$("minp").select()}else mreveal()}}
+function mexplore(){const lr=MAP.G.g==="learn";if(lr){$("mtag").textContent="Tap and learn";$("mq").textContent="Tap any country on the map.";$("mfill").style.width="0";["mopts","mtype","msearch","mhint","mshow"].forEach(i=>$(i).classList.add("hidden"));$("mnext").textContent="Surprise me";$("mnext").classList.remove("hidden");$("mscore").textContent="0 explored";info("Tap a country to learn its name, capital, currency and landmark. Countries you have visited turn green.");return}
+ $("mtag").textContent="Search and explore";$("mq").textContent="Search a country, or tap one on the map.";$("mfill").style.width="0";$("mopts").classList.add("hidden");$("mtype").classList.add("hidden");$("msearch").classList.remove("hidden");["mhint","mshow","mnext"].forEach(i=>$(i).classList.add("hidden"));$("msin").value="";msug();info("Try searching for a country, a capital, a currency or a landmark.")}
+function mfind(v){v=nz(v);if(!v)return[];const al=AL[v],r=WCL.filter(c=>c.n===al||nz(c.n).includes(v)||[capOf.get(c.n),curOf.get(c.n),...(landOf[c.n]||[])].some(s=>s&&nz(s).includes(v)));return r.sort((a,b)=>(nz(b.n).startsWith(v)-nz(a.n).startsWith(v))).slice(0,6)}
+function msug(){const r=mfind($("msin").value);$("msug").innerHTML=r.map(c=>`<button type="button" class="chip2" data-i="${c.iso}">${c.n}</button>`).join("");$("msug").querySelectorAll("button").forEach(b=>b.onclick=()=>mshow(WI[b.dataset.i]))}
+function mshow(c,tapped){clearMarks();const e=MAP.els[c.iso],G=MAP.G;if(G.g==="learn"&&e){G.seen.add(c.iso);e.classList.add("vis");$("mscore").textContent=G.seen.size+" explored"}e&&e.classList.add("sel");if(!tapped&&e)focusId(c.iso);info(c.cn?facts(c):c.n+".")}
+function mfinish(){const G=MAP.G,max=G.L.length*10,p=Math.round(G.score/max*100),st=store.streak,t=day(),y=new Date(Date.now()-864e5).toISOString().slice(0,10);
+ if(st.last!==t){st.n=st.last===y?st.n+1:1;st.last=t}store.mbg=store.mbg||{};if(store.mbg[G.g]==null||p>store.mbg[G.g])store.mbg[G.g]=p;if(store.mb==null||p>store.mb)store.mb=p;save();clearMarks();
+ const f=G.res.filter(r=>r.ok).length;$("mdscore").textContent=G.score+" / "+max;$("mdsum").textContent=`You got ${f} of ${G.L.length} right on the first try. Best for this game: ${store.mbg[G.g]}%.`;
+ $("mdchips").innerHTML=G.res.map(r=>`<span class="chip3${r.ok?"":" miss"}">${r.n}</span>`).join("");$("mretry").classList.toggle("hidden",!G.res.some(r=>!r.ok));mset("done")}
+function mmenu(){if(MAP.state==="menu")return;mset("menu");clearMarks();note("");mrender();if(location.hash==="#mapplay")history.back()}
+$("mapcard").onclick=openMap;$("mback").onclick=()=>MAP.state==="menu"?gohome():mmenu();$("mstat").onclick=mprefetch;
+$("mmenu").onclick=mmenu;$("mdmenu").onclick=mmenu;$("magain").onclick=()=>mstart(MAP.G.g);$("mretry").onclick=()=>mstart(MAP.G.g,MAP.G.res.filter(r=>!r.ok).map(r=>r.c));
+$("mopts").onclick=e=>{const b=e.target.closest(".opt");if(b&&!b.disabled)mpick(b.dataset.o,b)};
+$("mhint").onclick=mhint;$("mshow").onclick=mreveal;$("mok").onclick=mtypeok;
+$("minp").onkeydown=e=>{if(e.key==="Enter")mtypeok()};$("msin").oninput=msug;$("msin").onkeydown=e=>{if(e.key==="Enter"){const r=mfind($("msin").value);if(r[0])mshow(r[0])}};
+$("mrand").onclick=()=>{const ids=new Set(MAP.feats.map(f=>f.id)),r=shuf(rgn().filter(x=>ids.has(x.iso)))[0];if(r){$("msin").value=r.n;msug();mshow(r)}};
+$("mnext").onclick=()=>{const G=MAP.G;if(G.g==="learn"){const ids=new Set(MAP.feats.map(f=>f.id)),P=rgn().filter(x=>ids.has(x.iso)),U=P.filter(x=>!G.seen.has(x.iso)),r=shuf(U.length?U:P)[0];if(r)mshow(r);return}if(G.i===G.L.length-1)mfinish();else{G.i++;mq()}};
+addEventListener("keydown",e=>{if(VIEW!=="map"||MAP.state!=="game"||e.ctrlKey||e.metaKey||e.altKey)return;const G=MAP.G,tg=e.target.tagName;
+ if(e.key==="Enter"&&G.ans&&!$("mnext").classList.contains("hidden")){e.preventDefault();$("mnext").click();return}
+ if(tg==="INPUT")return;const k=e.key.toLowerCase(),o=Math.max("1234".indexOf(k),"abcd".indexOf(k)),b=k.length===1&&o>=0&&$("mopts").children[o];if(b&&!b.disabled)b.click()});
+$("mzi").onclick=()=>zoom(1.4);$("mzo").onclick=()=>zoom(1/1.4);$("mrs").onclick=focusRegion;
+$("mtg").onclick=()=>{MAP.mode=MAP.mode==="globe"?"flat":"globe";MAP.k=MAP.mode==="flat"?1.15:1;MAP.tx=MAP.ty=0;$("mtg").textContent=MAP.mode==="globe"?"🗺️":"🌐";mapSize();mdraw();focusRegion()};
+addEventListener("resize",()=>{if(VIEW==="map"&&MAP.inited){mapSize();mdraw()}});
+
+function sd(s){return()=>{s|=0;s=s+0x6D2B79F5|0;let t=Math.imul(s^s>>>15,1|s);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+function startDaily(){const r=sd(+day().replace(/-/g,"")),ks=Object.keys(C),it=[];
+ for(let i=0;it.length<10&&i<300;i++){const k=ks[Math.floor(r()*ks.length)],id=Math.floor(r()*C[k].Q.length);if(!it.some(x=>x[0]===k&&x[1]===id))it.push([k,id])}
+ R={k:"mis",kk:it.map(x=>x[0]),ids:it.map(x=>x[1]),i:0,score:0,wrong:[],lock:false,daily:1};R.n=it.length;ask();show("quiz")}
+function dailyUpd(){const done=store.dd===day();$("dstat").textContent=done?`Done for today: you scored ${store.dsc} out of 10. Come back tomorrow, or replay it.`:"10 mixed questions from every topic, new every day. Finish it to keep your streak alive.";
+ const f=C.fn.Q.filter(q=>q.k!=="True or False"),n=Math.floor(Date.now()/864e5);$("fact").textContent="💡 Fun fact of the day: "+f[n%f.length].e}
+$("dailycard").onclick=startDaily;
+{const f0=finish;finish=function(){f0();if(R&&R.daily){store.dd=day();store.dsc=R.score;save()}}}
+/* live background */
+const cv=$("bg"),cx=cv.getContext("2d"),still=matchMedia("(prefers-reduced-motion: reduce)").matches;let W,H,P=[],mx=-999,my=-999,pc=null,fr=0,raf=0;
+function size(){const d=devicePixelRatio||1;W=innerWidth;H=innerHeight;cv.width=W*d;cv.height=H*d;cx.setTransform(d,0,0,d,0,0);
+ P=Array.from({length:Math.min(70,Math.floor(W*H/20000))},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.4,vy:(Math.random()-.5)*.4,r:Math.random()*1.8+.8}));draw()}
+function draw(){if(!pc||fr++%90===0)pc=getComputedStyle(document.documentElement).getPropertyValue("--pc").trim();cx.clearRect(0,0,W,H);
+ for(const p of P){if(!still){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1;const dx=p.x-mx,dy=p.y-my,d=Math.hypot(dx,dy);if(d<150&&d>0){p.x+=dx/d*1.4;p.y+=dy/d*1.4}}
+  cx.fillStyle=`rgba(${pc},.8)`;cx.beginPath();cx.arc(p.x,p.y,p.r,0,6.3);cx.fill()}
+ for(let i=0;i<P.length;i++)for(let j=i+1;j<P.length;j++){const d=Math.hypot(P[i].x-P[j].x,P[i].y-P[j].y);if(d<130){cx.strokeStyle=`rgba(${pc},${.28*(1-d/130)})`;cx.lineWidth=1;cx.beginPath();cx.moveTo(P[i].x,P[i].y);cx.lineTo(P[j].x,P[j].y);cx.stroke()}}
+ raf=!still&&!document.hidden?requestAnimationFrame(draw):0}
+addEventListener("pointermove",e=>{mx=e.clientX;my=e.clientY});addEventListener("pointerleave",()=>{mx=my=-999});
+let rt;addEventListener("resize",()=>{clearTimeout(rt);rt=setTimeout(()=>{if(still)size();else{W=innerWidth;H=innerHeight;cv.width=W*(devicePixelRatio||1);cv.height=H*(devicePixelRatio||1);cx.setTransform(devicePixelRatio||1,0,0,devicePixelRatio||1,0,0)}},150)});
+document.addEventListener("visibilitychange",()=>{if(!document.hidden&&!raf&&!still)raf=requestAnimationFrame(draw)});
+try{location.replace("#home")}catch(e){}size();home();
+</script>
+</body>
+</html>
